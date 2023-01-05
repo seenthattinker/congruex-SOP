@@ -1,58 +1,113 @@
 
-= OTDR
+= OTDR Tests
 
-The Optical time-domain reflectometer (OTDR) is a main tool in the field.
-It is an optoelectronic instrument to define and delimit  optical fiber, 
-the optical equivalent of an electronic time domain reflectometer to measures the impedance of the cable or transmission line under test. 
-It injects optical pulses into the fiber.
-The scattered or reflected light returned defines and delimits the optical fiber. 
-The strength of the return pulses is measured and integrated as a function of time, and plotted as a function of length of the fiber. footnote:[https://en.wikipedia.org/wiki/Optical_time-domain_reflectometer]
+OTDR tests are used to measure the characteristics of an optical fiber. It is commonly used to test and troubleshoot fiber optic networks.
 
-The following SOPs define how to auto test and how to calibrate a test.
+The OTDR works by sending a pulse of light down the fiber and measuring the time it takes for the light to be reflected back. By analyzing the time delay and the strength of the reflected light, the OTDR is able to determine the location and nature of any defects or breaks in the fiber. This information can be used to identify problems with the fiber and to determine the length of the fiber.
 
+OTDR tests are typically used in the installation and maintenance of fiber optic networks, and are an essential tool for ensuring the reliability and performance of these networks. There are several different types of OTDR tests that can be performed, including loss tests, reflectance tests, and dispersion tests. The specific type of test that is performed will depend on the specific requirements of the fiber optic link being tested.
+
+== Purpose
+
+The purpose of an Optical Time-Domain Reflectometer (OTDR) test is to measure the characteristics of an optical fiber. This includes identifying defects or breaks in the fiber, determining the length of the fiber, and measuring the amount of signal loss, reflectance, and dispersion that occurs along the fiber.
+
+OTDR tests are typically used to identify problems with a fiber optic link and to assess its performance. They are an essential tool for ensuring the reliability and performance of fiber optic networks, and are commonly used in the installation and maintenance of these networks.
+
+In addition to identifying problems and assessing performance, OTDR tests can also be used to verify the quality of a fiber optic link. This can be important when installing a new fiber optic network or when upgrading an existing network. By performing an OTDR test, you can ensure that the fiber optic link meets the necessary standards and specifications.
+
+=== Types of ODTR Tests
+
+
+There are several different types of Optical Time-Domain Reflectometer (OTDR) tests that can be performed, depending on the specific characteristics of the fiber optic link being tested. Here are a few examples:
+
+. Loss test: This test is used to measure the amount of signal loss that occurs along the fiber. It is typically performed by transmitting a known signal through the fiber and measuring the strength of the received signal.
+
+. Reflectance test: This test is used to measure the amount of light that is reflected back from the fiber. It is typically performed by transmitting a pulse of light down the fiber and measuring the strength of the reflected light.
+
+. Dispersion test: This test is used to measure the amount of dispersion (scattering) that occurs along the fiber. It is typically performed by transmitting a pulse of light down the fiber and measuring the width of the pulse after it has traveled a certain distance.
+
+. Return loss test: This test is used to measure the amount of light that is reflected back from the fiber when a signal is transmitted in the opposite direction. It is typically performed by transmitting a signal in one direction and measuring the strength of the signal that is reflected back in the opposite direction.
+
+. Splice loss test: This test is used to measure the amount of signal loss that occurs at a splice point in the fiber. It is typically performed by transmitting a known signal through the fiber on either side of the splice and measuring the strength of the received signal.
+
+These are just a few examples of the types of OTDR tests that can be performed. There are many other tests that can be performed using an OTDR, and the specific test that is performed will depend on the specific requirements of the fiber optic link being tested.
+
+== Requirements
+
+To perform an Optical Time-Domain Reflectometer (OTDR) test, you will need the following:
+
+. An OTDR: This is a specialized instrument that is used to perform OTDR tests. It consists of a device for transmitting a test signal down the fiber and a device for measuring the reflected light.
+
+. A fiber optic link: This is the fiber optic cable or cables that you want to test. The OTDR test will be performed on this link.
+
+. Connectors: Depending on the specific configuration of your fiber optic link, you may need connectors to connect the OTDR to the link. These connectors will depend on the type of fiber that you are using and the interface on the OTDR.
+
+. A way to record the results of the test: This could be done using a pen and paper, or it could be done using a computer or other digital device.
+
+. Optionally, you may also need a power source for the OTDR, as well as any additional equipment or accessories that are required by the specific OTDR that you are using.
 
 == Auto Test
 
-. Turn on the OTDR. 
-It takes a few seconds to boot up.
-. You see a choice between test or setup. 
-. Hit autotest.
-.. The OTDR selects its parameters, takes a period, analyzes it, and gives the results. It should not take longer than a few seconds.
-. Now change the distance to two kilometers.
+To perform an OTDR auto test, you will need to follow these steps:
+
+. Make sure that the OTDR is turned on and that it is properly connected to the fiber optic link that you want to test.
+
+. Navigate to the OTDR auto test menu on the OTDR's display. This option may be located in the main menu or in a submenu.
+
+. Follow the prompts on the display to initiate the OTDR auto test. This may involve selecting the type of test that you want to perform (e.g., loss, reflectance, dispersion), as well as any other relevant parameters.
+
+. Wait for the OTDR to complete the test. This may take a few minutes, depending on the length and complexity of the fiber optic link.
+
+. Once the test is complete, the OTDR will display the results on the screen. These results may include a graphical representation of the fiber optic link, as well as numerical data about the loss, reflectance, and dispersion of the link.
+
+. Review the results of the test to identify any problems or areas of concern. If necessary, use the OTDR's analysis tools to further investigate any issues that are identified.
+
+=== Limitations of Auto Tests
+
+There are a few limitations and shortcomings to consider when using an OTDR auto test:
+
+. Limited accuracy: OTDR auto tests are generally accurate, but they may not be as precise as manually taking measurements with an OTDR. This can be especially true for measurements of very small losses or reflectances.
+
+. False positives: OTDR auto tests may sometimes identify problems that do not actually exist. This can happen when the OTDR interprets a normal feature of the fiber optic link (e.g., a splice or connector) as a problem.
+
+. Limited testing range: OTDR auto tests are generally only able to test a single span of fiber at a time. If you need to test a longer link that consists of multiple spans, you may need to perform multiple OTDR auto tests or use a different testing method.
+
+. Complexity: OTDRs can be complex instruments, and it may take some time to learn how to use them effectively. This can be especially true if you are using an OTDR with advanced features, such as auto testing.
+
+
+[NOTE]
+Overall, while OTDR auto tests are useful tools for quickly and efficiently assessing the condition of a fiber optic link, they should not be relied upon as the sole source of information when troubleshooting or testing a link. It is often necessary to perform additional tests and use other tools to fully understand the condition of a fiber optic link.
 
 == Calibrated Test
 
-. Change the distance to two kilometers.
-. Change the pulse width to six nanoseconds, the shortest allowable. This is fine on a one kilometer length. 
-. Change the measurement time to 15 seconds to reduce the noise.
-. Save the settings.
-. Run the trace again.
+An Optical Time-Domain Reflectometer (OTDR) calibrated test is a test that is performed using an OTDR that has been calibrated to a specific set of standards. Calibration is the process of adjusting an instrument to meet a specific set of standards or requirements.
 
-[TIP]
-The trace is very clean when the parameters are set correctly. 
-How do we get a clean trace? 
-When the OTDR choses its own parameters for an auto test,
-it shows a 25 nanosecond wide test pulse.
-There is a lot of excess energy in the pulse.
-It is part of what causes the ghosts in the trace.
-The narrowest pulse available to us maximizes the resolution of the OTDR
-&mdasah;
-important when measuring short cables
-&mdash;
-reducing the amount of energy in the pulse, 
-and the ghosting.
+Calibrating an OTDR ensures that the instrument is able to accurately measure the characteristics of a fiber optic link. This is important because the OTDR's measurements will be used to identify problems and assess the performance of the link.
 
-== Best Practice
+To perform an OTDR calibrated test, you will need to follow the same steps as you would for an auto test, but you will also need to ensure that the OTDR is properly calibrated before the test is performed. This may involve adjusting the OTDR's settings or using specialized calibration equipment.
 
-. Know the cable plants you are testing.
-. Choose optimum parameters for that cable.
-. Choose your test by choosing the appropriate pulse width. 
-. Know the best resolution and distance trade-offs on every trace.
-. Know how long the cable plant is, and how the OTDR trace is affected by the pulse width.
-. The correct pulse width is always mandatory to analyze the trace properly.
-. Document your cable jobs so future testers know the cable lengths.
+Once the OTDR is calibrated, you can perform the test as you would normally. The results of the test will be more accurate and reliable because the OTDR has been calibrated to a specific set of standards.
+
+=== Calibration
+
+To calibrate an Optical Time-Domain Reflectometer (OTDR), you will need to follow these steps:
+
+. Obtain a calibration standard that is appropriate for your OTDR. This may be a calibrated fiber optic link or a specialized calibration device.
+
+. Connect the calibration standard to the OTDR according to the manufacturer's instructions.
+
+. Navigate to the calibration menu on the OTDR's display. This option may be located in the main menu or in a submenu.
+
+. Follow the prompts on the display to initiate the calibration process. This may involve selecting the type of calibration that you want to perform (e.g., loss, reflectance, dispersion), as well as any other relevant parameters.
+
+. Wait for the OTDR to complete the calibration. This may take a few minutes, depending on the complexity of the calibration process.
+
+. Once the calibration is complete, the OTDR will display a message indicating that the calibration was successful.
+
+. Test the OTDR to ensure that it is properly calibrated. This may involve performing a test using the OTDR and comparing the results to the expected values.
 
 
-== See Also
+
+
 
 
