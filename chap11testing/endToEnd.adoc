@@ -1,6 +1,12 @@
 = End to End link Loss
 
-An end-to-end link loss test is a way to measure the amount of signal loss that occurs between two points in a communication system. This test is typically used to diagnose problems with the link, such as interference or faulty equipment. To perform an end-to-end link loss test, you will need to have access to the two points at which the link is connected, as well as a device for measuring the signal strength. Here are the general steps for performing an end-to-end link loss test:
+An end-to-end link loss test is a way to measure the amount of signal loss that occurs between two points in a communication system. This test is typically used to diagnose problems with the link, such as interference or faulty equipment. To perform an end-to-end link loss test, you will need to have access to the two points at which the link is connected, as well as a device for measuring the signal strength. 
+
+
+
+== Procedure
+
+Here are the general steps for performing an end-to-end link loss test:
 
 . Connect the device for measuring the signal strength to one end of the link.
 . Set the device to transmit a test signal at a known power level.

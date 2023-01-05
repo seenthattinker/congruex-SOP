@@ -32,7 +32,7 @@ There are several requirements that need to be met in order to perform an accura
 By following these requirements and using the appropriate equipment and techniques, you can perform an accurate and reliable test of fiber polarity with MPO connectors.
 
 
-== Process
+== Procedure
 
 
 To test for fiber polarity with MPO connectors, you will need the following equipment:

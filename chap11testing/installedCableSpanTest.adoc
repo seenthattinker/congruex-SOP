@@ -25,7 +25,7 @@ During the reference testing using two jumpers, one complete connection (two con
 added later to terminate between the transmission equipment and the fiber span.
 
 
-== Process
+== Procedure
 
 To perform an installed cable span test between patch panels, you will need to have access to the patch panels and a device for testing the cables. Here are the general steps for performing this test:
 
