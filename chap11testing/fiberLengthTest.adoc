@@ -1,0 +1,181 @@
+= Fiber Length Verification
+
+There are numerous means by which to measure fiber length
+OTDR trace,
+OLTS,
+or cable sheath markings,
+tape measure,
+fiber optic length meter,
+time domain reflectometer (TDR),
+or laser micrometer.
+and it must be understood there could be a difference between fiber length and cable length.
+
+[quote,TIA-568-C.0: Generic Telecommunications Cabling for Customer Premises]
+
+The optical lengths of certain cables (e.g., stranded loose tube) may be longer than the cable sheath due to the fiber lay within the cable sheath.
+
+
+
+== Purpose
+
+
+
+There are several reasons why it may be necessary to measure the length of a fiber optic cable:
+
+. To determine how much cable is needed for a specific installation: Knowing the length of the cable can help you determine how much cable you need to purchase or how much cable is left on a spool.
+
+. To calculate the cost of a cable installation: The cost of installing a fiber optic cable may depend on the length of the cable. Knowing the length of the cable can help you calculate the total cost of the installation.
+
+. To troubleshoot problems with a fiber optic system: If there are issues with the performance of a fiber optic system, measuring the length of the cable can help you determine if the problem is caused by a fault in the cable itself.
+
+. To ensure that a cable meets specific length requirements: In some cases, there may be requirements for the minimum or maximum length of a fiber optic cable. Measuring the length of the cable can help you ensure that it meets these requirements.
+
+. To optimize the performance of a fiber optic system: Knowing the length of the cable can help you optimize the performance of a fiber optic system by ensuring that the cable is not too long, which can result in signal loss, or too short, which may not provide sufficient coverage.
+
+
+
+== Requirements
+
+
+There are several ways to determine the length of a fiber optic cable:
+
+. `Use a tape measure`: This is the simplest method, but it is only accurate for short lengths of cable.
+
+. `Use a fiber optic length meter`: This is a specialized device that sends a pulse of light down the fiber and measures the time it takes for the light to travel to the other end and back. The length of the fiber can then be calculated based on the speed of light in the fiber.
+
+. `Use a time domain reflectometer (TDR)`: This is a device that sends a pulse of electricity down the fiber and measures the time it takes for the pulse to travel to the other end and back. The length of the fiber can then be calculated based on the speed at which the pulse travels.
+
+. `Use a laser micrometer`: This is a device that projects a laser beam onto the fiber and measures the distance the beam travels. The length of the fiber can then be calculated based on the distance the beam travels.
+
+. `Use cable sheath markings`: Cable sheath markings are used to identify the type and size of a fiber optic cable. These markings are usually printed on the outer sheath or jacket of the cable. 
+
+. `Use an ODTR Trace`: An OTDR works by sending a pulse of light down the fiber and measuring the time it takes for the light to travel to the other end and back. 
+
+
+[IMPORTANT]
+It is important to use the appropriate method for the specific type of fiber optic cable being measured. The accuracy of the measurement may also be affected by the condition of the fiber, such as any bends or kinks in the cable.
+
+== Procedure
+
+
+=== Tape Measure
+
+To use a tape measure to measure fiber optic cable, follow these steps:
+
+. Unroll the tape measure and extend it to the desired length.
+
+. Place one end of the tape measure at one end of the fiber optic cable.
+
+. Carefully extend the tape measure along the length of the fiber, following the path of the cable.
+
+. When you reach the other end of the fiber, read the measurement on the tape measure. This is the length of the fiber optic cable.
+
+
+[IMPORTANT]
+It is important to use caution when measuring fiber optic cables with a tape measure, as the fibers are very delicate and can be easily damaged. Always handle the fibers carefully and use proper protective equipment, such as gloves and eye protection. This method is only accurate for short lengths of cable. For longer lengths, or for more precise measurements, you may need to use a specialized device such as a fiber optic length meter or a time domain reflectometer.
+
+=== Fiber Optic Light Cable
+
+To use a fiber optic length meter to measure fiber optic cable, follow these steps:
+
+. Connect one end of the fiber optic length meter to the fiber optic cable.
+
+. Turn on the length meter and wait for it to warm up, if necessary.
+
+. Observe the display on the length meter. The device will send a pulse of light down the fiber and measure the time it takes for the light to travel to the other end and back.
+
+. The length meter will calculate the length of the fiber based on the speed of light in the fiber and display the result on the screen.
+
+. Take note of the measurement. This is the length of the fiber optic cable.
+
+
+[IMPORTANT]
+It is important to use caution when using a fiber optic length meter, as the device produces a pulse of light that can be harmful to the eyes. Always use eye protection and follow the manufacturer's instructions for using the device safely.
+
+
+=== Time Domain Reflectometer (TDR)
+
+To use a time domain reflectometer (TDR) to measure fiber optic cable, follow these steps:
+
+. Connect one end of the TDR to the fiber optic cable.
+
+. Turn on the TDR and wait for it to warm up, if necessary.
+
+. Observe the display on the TDR. The device will send a pulse of electricity down the fiber and measure the time it takes for the pulse to travel to the other end and back.
+
+. The TDR will calculate the length of the fiber based on the speed at which the pulse travels and display the result on the screen.
+
+. Take note of the measurement. This is the length of the fiber optic cable.
+
+
+[IMPORTANT]
+It is important to use caution when using a TDR, as the device produces a pulse of electricity that can be hazardous. Always follow the manufacturer's instructions for using the device safely.
+
+=== Cable Sheath Markings
+
+Cable sheath markings are used to identify the type and size of a fiber optic cable. These markings are usually printed on the outer sheath or jacket of the cable. They may include information such as the manufacturer's name, the type of fiber used, the number of fibers in the cable, and the diameter of the cable.
+
+To use cable sheath markings to measure fiber optic cable, follow these steps:
+
+. Locate the cable sheath markings on the cable.
+
+. Look for markings that indicate the diameter of the cable. This will typically be expressed in millimeters (mm) or inches (in).
+
+. Measure the diameter of the cable using a ruler or calipers.
+
+. Use the diameter measurement to calculate the approximate length of the cable. To do this, you will need to know the density of the material used to make the cable sheath. The density can typically be found in a reference table or by contacting the cable manufacturer.
+
+. Using the density and diameter measurements, use the following formula to calculate the length of the cable:
+
+````
+Length = Density * Volume
+````
+
+Where:
+
+* Length is the length of the cable in meters (m)
+* Density is the density of the material in kilograms per cubic meter (kg/m^3)
+* Volume is the volume of the cable in cubic meters (m^3)
+
+
+[NOTE]
+It is important to note that this method is only an approximation and may not be accurate for all types of fiber optic cable. It is also important to use caution when measuring fiber optic cables, as the fibers are very delicate and can be easily damaged. Always handle the fibers carefully and use proper protective equipment, such as gloves and eye protection.
+
+
+=== OTDR Trace
+
+An optical time domain reflectometer (OTDR) is a specialized device that can be used to measure the length of a fiber optic cable. An OTDR works by sending a pulse of light down the fiber and measuring the time it takes for the light to travel to the other end and back. It then creates a graphical representation of the fiber, known as an OTDR trace, which can be used to measure the length of the fiber.
+
+To use an OTDR trace to measure fiber optic cable, follow these steps:
+
+. Connect one end of the OTDR to the fiber optic cable.
+
+. Turn on the OTDR and wait for it to warm up, if necessary.
+
+. Observe the OTDR trace on the display. The OTDR trace is a graphical representation of the fiber, with the distance along the fiber plotted on the horizontal axis and the signal strength plotted on the vertical axis.
+
+. Look for the point on the trace where the signal strength drops to zero. This indicates the end of the fiber.
+
+. Measure the distance from the start of the trace to the end of the fiber using the horizontal axis of the trace. This is the length of the fiber optic cable.
+
+[IMPORTANT]
+It is important to use caution when using an OTDR, as the device produces a pulse of light that can be harmful to the eyes. Always use eye protection and follow the manufacturer's instructions for using the device safely.
+
+
+=== OLTS 
+
+An optical loss test set (OLTS) is a device that is used to measure the loss of light in a fiber optic cable. It works by sending a pulse of light down the fiber and measuring the amount of light that is transmitted through the fiber. The difference between the amount of light sent and the amount of light received is the loss of light in the fiber, which is expressed in decibels (dB).
+
+To use an OLTS to measure fiber optic cable, follow these steps:
+
+. Connect one end of the OLTS to the fiber optic cable.
+
+. Turn on the OLTS and wait for it to warm up, if necessary.
+
+. Observe the display on the OLTS. The device will send a pulse of light down the fiber and measure the amount of light that is transmitted through the fiber.
+
+. The OLTS will display the loss of light in the fiber in dB. This value is a measure of the quality of the fiber.
+
+
+[IMPORTANT]
+It is important to use caution when using an OLTS, as the device produces a pulse of light that can be harmful to the eyes. Always use eye protection and follow the manufacturer's instructions for using the device safely.

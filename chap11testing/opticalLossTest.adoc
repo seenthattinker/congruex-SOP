@@ -1,0 +1,67 @@
+= Optical Loss Test Set (OLTS)
+
+The most basic optical fiber measurement is _received optical power_.
+An OLTS includes an xref:glossary.adoc#O[optical power meter] to measure received optical power and a light source that closely resembles a system transmitter.
+for example,
+an LED for multimode optical links or a laser for single-mode optical links.
+An OLTS may be a single instrument or separable optical power meter and light source.
+
+
+
+
+== Purpose
+
+An optical loss test (also known as an optical loss measurement or an optical power budget calculation) is a test used to measure the loss of light intensity in an optical fiber or cable. It is used to determine the amount of light that is transmitted through the fiber, and to identify any issues or problems that may be causing the loss of signal strength.
+
+Optical loss tests are important in telecom systems because they can help to identify problems with the fiber optic cables that could impact the quality and reliability of the system. For example, if the optical loss is too high, it can cause problems with signal transmission and may result in poor call quality or dropped connections. By performing an optical loss test, technicians can identify and troubleshoot any issues with the fiber optic cables, ensuring that the telecom system is operating at optimal performance.
+
+To perform an optical loss test, a specialized test equipment called an optical time domain reflectometer (OTDR) is typically used. The OTDR sends a pulse of light down the fiber optic cable and measures the time it takes for the light to return, allowing technicians to calculate the loss of signal strength along the length of the cable.
+
+== Requirements
+
+There are several requirements that need to be met in order to perform an accurate and reliable optical loss test in a telecom system. These include:
+
+. Calibration of the test equipment: The test equipment (such as an optical time domain reflectometer, or OTDR) must be calibrated to ensure accurate measurements. This typically involves using a reference fiber of known loss to verify the accuracy of the measurements.
+
+. Clean fiber ends: The fiber ends must be clean and free of dirt, dust, and other contaminants, as these can affect the accuracy of the measurements.
+
+. Proper handling of the fiber: The fiber must be handled carefully to avoid damaging it, as any breaks or bends in the fiber can affect the measurements.
+
+. Stable test conditions: The test environment should be stable and free of any external factors that could affect the measurements, such as temperature fluctuations or electrical interference.
+
+. Repeatability of measurements: It is important to ensure that the measurements are repeatable and consistent, so that any changes in the fiber optic cables can be accurately detected.
+
+By following these requirements, technicians can ensure that the optical loss test is accurate and reliable, and that any problems with the fiber optic cables can be identified and addressed.
+
+== Procedure
+
+To perform an Optical Loss Test Set (OLTS) you will need the following equipment:
+
+. An Optical Time Domain Reflectometer (OTDR): This is a specialized test instrument used to measure the loss of signal strength in a fiber optic cable.
+
+. A fiber optic launch cable: This is a short length of fiber optic cable with connectors on each end that is used to connect the OTDR to the fiber under test.
+
+. A fiber optic test cord: This is a longer length of fiber optic cable with connectors on each end that is used to connect the patch panels or devices being tested.
+
+To perform the test, follow these steps:
+
+. Connect the OTDR to the fiber optic launch cable and the test cord.
+
+. Set up the OTDR according to the manufacturer's instructions, including selecting the appropriate wavelength and pulse width for the test.
+
+. Place the OTDR at one end of the fiber under test and initiate the test.
+
+. The OTDR will send a pulse of light down the fiber and measure the time it takes for the light to return, allowing you to calculate the loss of signal strength along the length of the fiber.
+
+. If the fiber has any breaks or defects, the OTDR will detect them and display them on the screen.
+
+. Repeat the test at the other end of the fiber to confirm the results and to ensure that the measurements are consistent.
+
+. Once the test is complete, review the results and identify any problems or issues with the fiber.
+
+By following these steps, you can perform an Optical Loss Test Set (OLTS) to accurately measure the loss of signal strength in a fiber optic cable.
+
+== See Also
+
+* xref:OTDRTest.adoc[OTDR]
+* xref:OpticalTimeDomainTest.adoc[Optical Time Domain Test]

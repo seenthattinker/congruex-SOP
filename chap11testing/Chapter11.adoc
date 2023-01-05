@@ -1,0 +1,937 @@
+:doctype: book
+:title-page-background-image: image:CongruexLogo.png[]
+
+= Chapter 11 -  *_Optical Testing_*
+
+== Fiber Optic Testing
+
+While most single-mode or multimode fiber tests are similar, each still has particular requirements. For example, multimode testing often requires tests to meet industry specifications tailored to the premises industry and does not normally include splice and splitter testing or characterization testing.
+
+Single-mode testing for service providers requires stricter values and requirements than most multimode tests. Stringent reflection and optical return loss (ORL) testing was necessary for reflection-sensitive Fabry-Perot and distributed feedback lasers (versus the VCSELs and LEDs used in multimode transmitters). Additionally, optical splitters are used in FTTx and hybrid fiber coax systems, but rarely in multimode
+systems. Due to higher speeds and much longer outside plant spans, more thorough OSP fiber tests are performed with the expectation that the fiber will be damaged in the future.
+
+High end testing can include fiber characterization for chromatic and polarization mode dispersion, and DWDM wavelength and power measurements that require greater expertise and specialty test equipment.
+
+image:media/graphtick.png[align='center']
+
+== TIA-568 Testing Terminology
+
+In annex E of the TIA-568-C.0 standard, information is provided to ensure that installed fiber cabling in premises installations meets the following minimum requirements.
+
+=== Tier 1 Testing (Required)
+
+* Attenuation testing with an optical loss test set (OLS and OPM).
+* Fiber length verification by sequential markings or a OLTS if the set has length measurement capability.
+* Polarity of the installed and terminated fibers. A visual fault locator can also be used to confirm polarity.
+* Multimode tested per TIA-526-14A, Method B.
+* Launch conditions per TIA-455-78B (external mandrel wrap).
+* Single-mode tested per TIA-526-7.
+* Test method needs to be identified on test report.
+
+=== Tier 2 Testing (Optional)
+
+* OTDR testing.
+* Wavelengths must match tier 1 OLTS tests.
+* Segment length.
+* Attenuation uniformity (slope).
+* Attenuation rate (dB/km).
+* Connector location and insertion loss.
+* Splice location and splice loss.
+* Microbend or macrobend losses and locations.
+
+The tier 2 OTDR testing does not replace the tier 1 testing but is used for supplementary evaluation of the installed fiber optic cable link.
+
+`Cabling Subsystem 1 Link Segment`: This requirement in the TIA-568 standard applies between the equipment out (or MUTOA) to the horizontal cross-connect (HC) patch panel and requires that segments at a minimum need to be tested in one direction at one wavelength. Thi s would be either 850 nm or 1300 nm for multimode fibers. For single-mode fibers, it would be at either 1310 nm or 1550 nm.
+
+`Cabling Subsystem 2 and Cabling Subsystem 3 Link Segments`: Subsystem 2 applies to the segment between the HC patch panel and the intermediate cross-connect (IC) patch panel. Subsystem 3 adds the link from the IC to the main cross-connect (MC). Testing both subsystem 2 and 3 link segments can occur from the HC to the MC and, at a minimum, need to be tested in one direction at two wavelengths. This would be
+850 nm and 1300 nm for multimode fi bers, and at 1310 nm and 1550 nm for single-mode fibers.
+
+== Test Methods
+
+=== What Are You Testing and Which Test Method Should You Use?
+
+`End-to-end link loss` is used by end users to determine the span loss between transmission equipment, including fiber attenuation and all connections at patch panels. The one-cord (or one-jumper) method is the most accurate loss measurement method and is recommended by most test equipment manufacturers. A test reference cord (TRC) is connected to the light source and power meter, and this power measurement
+is documented or _zeroed out_. The TRC is then disconnected from the power meter only (do not disconnect it from the source) and a second known good TRC is connected to the power meter. The link under test is connected to via the two TRCs. The power is measured and the loss can be accurately calculated or reported by the test equipment. Test standard: TIA-526-14B (Annex A, one-cord reference method)
+
+`Installed cable span between patch panels` includes the loss of the optical cable and terminations performed by the installers. Test standard: TIA-526-14B (Annex C, two-cord reference method) This test is usually performed by the installer as they normally are responsible for the installation of the fiber optic cable, the end terminations and the mating of the connectors into the proper adaptor sleeves
+at patch panels. The fibers in the cables are identified by the TIA-598 color code standard and would mate to the appropriate numbered adapter ports at patch panels.
+
+During the reference testing using two jumpers, one complete connection (two connectors and one adaptor) are zeroed or removed from the test to be performed. As the test will occur between two patch panels terminated with a connector at each end and one additional adaptor, the attenuation measured is the loss of one connection and the fiber span. This technique does not include the loss of the patch cords to be
+added later to terminate between the transmission equipment and the fiber span.
+
+`Cable assemblies` are tested identically to item B. Tests for preterminated cable assemblies must be performed in a controlled environment. Test standard: TIA-526-14B (Annex C, two-cord reference method).
+
+Manufacturers terminate, test, and inspect cable assemblies for bidirectional attenuation at 850 nm and 1300 nm for multimode assemblies and 1310 nm and 1550 nm for single-mode assemblies.
+
+`Installations or cable assemblies with different types of connections` are tested using the three cord reference method. This method attempts to exclude the loss of the connections to the cable under test and involves three test jumpers of which one is a substitution cord. Test standards: TIA-526-14B (Annex B, three-cord reference method), TIA-568.C.0 (for channel testing), and IEC 14763-3.
+
+In specialty applications including data centers and military/aerospace, connectors with a male (pin) and female (socket) configuration require a three-cord test.
+
+The test requires three test reference cords (TRC1, TRC2, TRC3). TRC1 and TRC2 will be terminated with the connector matching your test equipment on one end and the connector matching the link under test on the other end. Connect TRC1 to the light source and TRC2 to the power meter. Insert TRC3, which will have the same connectors as your link under test, between TRC1 and TRC2 and document the power level. Now remove TRC3 and substitute the link under test and document the added loss.
+
+If the end user wants to know the attenuation level between the transmitter and receiver locations, the optical power level must be measured from the transmitter (in dBm), as well as the received power level at the receiver (in dBm). The loss between the Tx and the Rx is the difference between the two power measurements (dBm minus dBm = dB).
+
+== Multimode Launch Conditions
+
+Over the years several launch condition methods have been used and identified in test standards. Multimode fiber systems can use two basic types of LEDs (edge and surface emitters) or VCSELs with different spatial spreads (low and high). This provide four different options for launch conditions coupled into any type of multimode fiber.
+
+Following is a brief overview of the most common techniques.
+
+=== Overfilled Launch (OFL) Conditions Using an LED
+
+This test provides the worst case launch and attenuation measurements. Due to the fact that most contractors have this type of equipment, it is the most likely to be used. This condition is based on the use of an LED light source.
+
+.Overfill Launch.
+image::media/overfillLaunch.png[align="center"]
+
+=== Restricted Mode Launch (RML)
+
+More complex than the OFL launch condition, this uses an external mandrel designed for either 50/125 or 62.5/125 micron multimode fibers. RML removes higher order modes, which limit the bandwidth of the system while lowering the attenuation measurement of the fiber span. Installers easily can add a mandrel to try to match VCSEL characteristics, as specified in the TIA-455-78B FOTP, Annex A.1.3.1.2. The mandrel
+used must match the fiber size to be tested.
+
+.Restricted Launch.
+image::media/restrictedLaunch.png[align="center"]
+
+=== Encircled Flux (EF)
+
+More complex and stringent than the OFL method, EF launch conditions can be achieved with an EF-compliant source mated to a specific test reference cord (TRC), or with a non-EF source connected with an EF mode conditioning launch cord.
+
+image::media/EncircledFlux.png[align="center"]
+
+== Optical Loss Testing with a Mandrel
+
+The use of an LED when testing a multimode link is called an overfilled launch condition (OFL). The measurement obtained using this technique is the worst case measurement an installer can obtain. It is also the easiest to perform and is applicable to most light sources available.
+
+.Span Test.
+image::media/spantest1.png[align="center"]
+
+image::media/spantest2.png[align="center"]
+
+
+== One-cord Reference Test Method
+
+This test, performed by end users, determines the losses of both the connections normally located at patch panels at each end of the cable link to be tested. Specified by the TIA-526-14B (Annex A), the test is called a one-cord reference because only one of the two test jumpers is used for the reference. The performance of the test jumpers should be confirmed prior to link or span testing. Industry best practices recommend that specific test reference cords are used for the test jumpers. These cords are built with tighter tolerances and assure more accurate and repeatable test results.
+
+In the following diagram you can see that two test jumpers (TJ1 and TJ2) are used at each end of the link to be tested. After confirming that the test jumpers are clean and meet the attenuation level required, TJ1 is connected to the patch panel adapter from the OLS. TJ2 is linked between the patch panel adapter and the OPM.
+
+[NOTE]
+If the test is to be performed using an overfilled launch (OFL) condition, a mandrel would be used on TJ1. For encircled flux (EF) testing where the light source has an internal restricted launch the mandrel is not required, but the appropriate test reference cord must be used with the EF compliant source.
+
+The one-cord reference test method is recommended for multimode link testing, providing the most accurate and repeatable results. It is preferred for both multimode and single-mode testing, as specified in the TIA-568-C.0 standard.
+
+.One Cord.
+image::media/OneCordTest.png[align="center"]
+
+== Two-cord Reference Test Method
+
+This test method is preferred by contractors who are responsible for the installation of the optical cable and the termination of the fibers normally between two patch panels. It is also used by manufacturers of cable assemblies to measure the attenuation of cable assemblies using like terminations.
+
+The test, specified by the TIA-526-14B (Annex C), measures the loss of the installed cable span, including the loss of the plugs terminated by the installer that are normally mated into patch panels. It requires that two test jumpers be referenced together and have their loss zeroed out by the OPM, so that any loss added between the two test jumpers is measured. This technique does not include the loss of any patch cords that are added later to terminate between the transmission equipment and the fiber span.
+
+During the reference testing using two jumpers, one complete connection (two plugs and one adaptor) are zeroed or removed from the test to be performed. As the test will occur between two patch panels terminated with a plug at each end and one additional adaptor, the attenuation measured is the loss of one connection and the fiber span. It is this loss that is the installer’s responsibility.
+
+[NOTE]
+If the test is to be performed on multimode fiber using an overfilled launch (OFL) condition, a mandrel would be used on TJ1. For encircled flux (EF) testing where the light source has an internal restricted launch the mandrel is not required.
+
+.Two Cord
+image::media/2cordreference.png[align="center"]
+
+image::media/2cordspantest.png[align="center"]
+
+image::media/modified2cordtest.png[align="center"]
+
+== Insertion Loss Method - For Testing Connectorized Cables
+
+=== Referencing the Test Set
+
+.Reference Jumpers.
+image::media/referenceTestSet.png[align="center"]
+
+. Turn on the optical light source and allow it to stabilize.
+. Clean the optical connectors.
+. In between the light source and the optical power meter (OPM), attach the two (2) reference jumpers with connectors and polishes matching the fiber to be tested.
+. Set the power meter to the correct wavelength; record the power level (in dBm) and zero the meter to display dB on the OPM.
+. Insert the cable or span to be tested between the reference jumpers.
+
+=== Inserting Cable to be Tested
+
+.Inserting Cable.
+image::media/insertCable.png[align="center"]
+
+. Record the cable loss in dB and the final power measurement in dBm.
+. Repeat the test at each wavelength required.
+. Test each run in each direction.
+
+== Not to Exceed Chart for Multimode Spans
+
+_Not to exceed_ spreadsheets are great for installers, contractors and inspectors. They identify the total loss values of the optical cable, connectors, and splices, and help to easily pinpoint fiber spans that are out of specification. Contractors and installers normally provide optical loss testing using the stabilized light sources and calibrated optical power meter to measure the attenuation levels between the transmission equipment’s patch panels to demonstrate proof of performance. These tests normally are performed bidirectionally and
+at 850 nm and 1300 nm, based on TIA-568 specifications for 62.5/125 graded-index multimode fibers for a given span length.
+
+There is also a column for the additional connection loss (see Note 1), based on performing fiber optic testing when using the insertion loss technique as specified in TIA-455-171-A, test method B (attenuation by substitution measurement), and TIA-526-14B, method A (optical power loss measurements of installed multimode fiber plant). The final measurement in this column is a _not to exceed_ number in dB.
+
+.Not to Exceed Multimode.
+|===
+|*Feet* |*Meters* |*850 nm* +
+*(3.5 dB/km)*|*With* +
+*patch panel*|*1300 nm* +
+*(1.5 dB/km)*|*With* +
+*patch panel*
+|100 +
+200 +
+300 +
+400 +
+500 +
+600 +
+700 +
+800 +
+900 +
+1000 +
+1250 +
+1500 +
+1750 +
+2000 +
+2500 +
+3000 +
+3281 +
+4000 +
+5000 +
+5280
+|30 +
+61 +
+91 +
+122 +
+152 +
+183 +
+213 +
+244 +
+274 + 
+305 +
+381 +
+457 +
+533 +
+610 +
+762 +
+914 +
+1000 +
+1219 +
+1524 +
+1609
+|0.10 dB +
+0.21 dB +
+0.32 dB +
+0.42 dB +
+0.53 dB +
+0.65 dB +
+0.74 dB +
+0.85 dB +
+0.97 dB +
+1.06 dB +
+1.34 dB +
+1.59 dB +
+1.84 dB +
+2.18 dB +
+2.69 dB +
+3.21 dB +
+3.50 dB +
+4.27 dB +
+5.38 dB +
+5.64 dB
+|0.85 dB +
+0.96 dB +
+1.07 dB +
+1.17 dB +
+1.28 dB +
+1.40 dB +
+1.49 dB +
+1.60 dB +
+1.72 dB +
+1.81 dB +
+2.09 dB +
+2.34 dB +
+2.59 dB +
+2.93 dB +
+3.44 dB +
+3.96 dB +
+4.25 dB +
+5.02 dB +
+6.13 dB +
+6.39 dB
+|0.05 dB +
+0.10 dB +
+0.14 dB +
+0.19 dB +
+0.23 dB +
+0.28 dB +
+0.32 dB +
+0.37 dB +
+0.42 dB +
+0.46 dB +
+0.58 dB +
+0.69 dB +
+0.80 dB +
+0.92 dB +
+1.15 dB +
+1.38 dB +
+1.50 dB +
+1.83 dB +
+2.29 dB +
+2.42 dB
+|0.80 dB +
+0.85 dB +
+0.89 dB +
+0.94 dB +
+0.98 dB +
+1.03 dB +
+1.07 dB +
+1.12 dB +
+1.17 dB +
+1.21 dB +
+1.33 dB +
+1.44 dB +
+1.55 dB +
+1.67 dB +
+1.90 dB +
+2.13 dB +
+2.25 dB +
+2.58 dB +
+3.04 dB +
+3.17 dB
+|===
+
+[NOTE]
+====
+. Attenuation numbers are rounded to the highest 1/100th of a dB.
+. With patch panel column includes additional 0.75 dB as specified in TIA-568 for connection not included in light source and power meter reference using two reference jumpers and additional sleeve.
+====
+
+== Not to Exceed Chart for Single-mode Spans
+
+_Not to exceed_ spreadsheets are great for installers, contractors, and inspectors. They identify the total loss values of the optical cable, fiber, connectors, splices, and splitters, and help to easily pinpoint fiber spans that are out of specification. Contractors and installers normally provide optical loss testing using the stabilized light sources and calibrated optical power meter to measure the attenuation levels between the transmission equipment’s patch panels to demonstrate proof of performance. These tests normally
+are performed bidirectionally and at 1310 nm and 1550 nm. In single-mode systems these tests also are performed using the OTDR.
+
+Based on generic specifications for G.652 single-mode fibers for a given span length for 1310-nm and 1550-nm wavelength-based systems.
+
+In addition, a column has been added for the additional connection loss (1) based on performing fiber optic testing when using the insertion loss technique as specified in TIA-455-171-A, test method B (attenuation by substitution measurement) in this column is a _not to exceed_ number in dB.
+
+.Not to Exceed Single Mode
+|===
+|*km* |*1310 nm* +
+*(0.4 dB/km)*|+ *Splice qty* +
+x *0.1 dB*|*With*  +
+*Patch Panel*|*Total* |*1550 nm* +
+*(0.25dB/km)* |+ *Splice qty*  +
+x *0.1 dB*|*With*  +
+*Patch Panel*|*Total*
+|1 +
+2 +
+3 +
+4 +
+5 +
+10 +
+15 +
+20 +
+25 +
+30 +
+35 +
+40 +
+45 +
+50 +
+55 +
+60 +
+70 +
+80 +
+90 +
+100|0.4 +
+0.8 +
+1.2 +
+1.6 +
+2.0 +
+4.0 +
+6.0 +
+8.0 +
+10.0 +
+12.0 +
+14.0 +
+16.0 +
+18.0 +
+20.0 +
+22.0 +
+24.0 +
+28.0 +
+32.0 +
+36.0 +
+40.0| +
+0.2 +
+0.2 +
+0.2 +
+0.2 +
+0.2 +
+0.3 +
+0.4 +
+0.5 +
+0.6 +
+0.6 +
+0.7 +
+0.8 +
+0.9 +
+1.0 +
+1.0 +
+1.1 +
+1.3 +
+1.4 +
+1.5 +
+1.7|0.5 +
+0.5 +
+0.5 +
+0.5 +
+0.5 +
+0.5 +
+0.5 +
+0.5 +
+0.5 +
+0.5 +
+0.5 +
+0.5 +
+0.5 +
+0.5 +
+0.5 +
+0.5 +
+0.5 +
+0.5 +
+0.5 +
+0.5|1.15 +
+1.50 +
+1.90 +
+2.30 + 
+2.70 +
+4.80 +
+6.90 +
+9.00 +
+11.10 +
+13.10 + 
+15.20 +
+17.30 +
+19.40 +
+21.50 +
+23.50 +
+25.60 +
+29.80 +
+33.90 +
+38.00 +
+42.20|0.25 +
+0.50 +
+0.75 +
+1.00 +
+1.25 +
+2.50 +
+3.75 +
+5.00 +
+6.25 +
+7.50 +
+8.75 +
+10.00 +
+11.25 +
+12.50 +
+13.75 +
+15.00 +
+17.50 +
+20.00 +
+22.50 +
+25.00|0.2 +
+0.2 +
+0.2 +
+0.2 +
+0.2 +
+0.3 +
+0.4 +
+0.5 +
+0.6 +
+0.6 +
+0.7 +
+0.8 +
+0.9 +
+1.0 +
+1.0 +
+1.1 +
+1.3 +
+1.4 +
+1.5 +
+1.7|0.5 +
+0.5 +
+0.5 +
+0.5 +
+0.5 +
+0.5 +
+0.5 +
+0.5 +
+0.5 +
+0.5 +
+0.5 +
+0.5 +
+0.5 +
+0.5 +
+0.5 +
+0.5 +
+0.5 +
+0.5 +
+0.5 +
+0.5|0.95 +
+1.30 +
+1.45 +
+1.70 +
+1.95 +
+3.30 +
+4.65 +
+6.00 +
+7.35 +
+8.60 +
+9.95 +
+11.30 +
+12.65 +
+14.00 +
+15.25 +
+16.60 +
+19.30 +
+21.10 +
+24.50 +
+27.20
+|===
+
+[NOTE]
+====
+. Attenuation numbers are rounded to the highest 1/100th of a dB.
+. With patch panel column includes additional 0.5 dB as specified in ITU-T G.671 for connection not included in light source and power meter reference using two reference jumpers and additional sleeve.
+. Adjust splice loss to meet your requirements. Column is based on 0.1 dB/splice as specified in the Telcordia GR-20 and outside plant standard.
+. Based on the inclusion of two pigtail splices and 6-km cable spans.
+====
+
+== Testing Transmitter Output Power
+
+image:media/TransmitterOutputPower.png[]
+
+. Always clean the optical connector endfaces.
+. Connect a test cable with known loss between the transmitter and the optical power meter.
+. Set the optical light source to correct wavelength.
+. Set the power meter to watts or dBm setting.
+. Turn the transmitter on and allow it to stabilize.
+. Record the optical power displayed on the optical power meter.
+. Subtract the loss of the test jumper for the output power of transmitter.
+. Document into the transmitter acceptance test report. Confirm that the transmitter meets specification.
+. Refer to the system manual to confirm that the measurement  above minimum acceptable coupled power.
+. For maintenance and troubleshooting, follow steps #1 through #7 and compare the new measurements to that recorded in item #8.
+
+== Testing Receiver Input Power
+
+image::media/ReceiverInputPower.png[]
+
+. Disconnect the system cable or patchcord from the receiver.
+. Always clean the optical connector endfaces.
+. Connect the optical cable to the power meter.
+. Set the optical power meter to the correct wavelength.
+. Turn on the transmitter.
+. Record the optical power (dBm).
+. Refer to the outside plant acceptance or maintenance report for comparison.
+. Refer to the system manual to confirm that the power level is above minimum acceptable receiver power and below maximum receiver power level.
+. If the power level is too high and oversaturates the photodiode, a fixed attenuator may be required at the receiver.
+
+== Optical Fiber Transmission System
+
+. With the system in its installed and final configuration, attach a bit error generator to the transmitter and a bit error rate (BER) test set to the receiver. Insert a variable optical attenuator (VOA) in front of the receiver with the attenuation set to 0.0 dB and turn
+the system on. 
+. Verify that the system is running error free by inserting errors at the transmitter and verifying the receipt of the errors at the
+receiver.
+. Slowly add attenuation into the system with the VOA while watching the BER test set. When the bit error rate reaches an unacceptable level (degraded service and out of service), read the amount of attenuation (dB) or power level (dBm) that had to be added.
+. This amount of attenuation is the system margin. This is the amount of attenuation that the system can absorb before it fails.
+
+[NOTE]
+====
+. Air-gap attenuators should not be used for multimode fiber due to the possibility of modal noise when used in conjunction with laser transmitters.
+. All VOAs have some attenuation. This value should be calculated into the final measurement.
+====
+
+image::media/VariableOpticalAttenuatorPowerMeter.png[]
+
+
+== Transmitter and Receiver Documentation
+
+image::media/ReceiverDocument.png[]
+
+This form allows for pre- (planned) or post- (unplanned) acceptance testing or performance testing of transmission systems. For acceptance testing, the transmitter and receiver are linked using two optical jumpers that match the fiber type and connectors used in the system. In both acceptance testing and hot testing of transmission equipment, a performance test set is required to test signal quality. BERT or datacom
+analyzers are two types of equipment used to test signal quality.
+
+`Step 1.` Measure the output power (dBm) using a power meter calibrated to the correct wavelength. Record in column B. Compare to manufacturer’s specifications.
+
+`Step 2.` Disconnect the jumper from the receiver and measure the received power (dBm). Document and list in column C.
+
+`Step 3.` Insert a variable optical attenuator (VOA) with known excess loss (when measuring 0 dB) between the transmitter and receiver (or between the receiver and patch panel. Make sure that the fiber jumpers and the calibration wavelength of the VOA match the system. Increase the signal loss with the VOA until the system’s performance degrades below the minimum acceptable level.
+
+`Step 4.` Disconnect the jumper from the receiver port and measure the received power (dBm) using the optical power meter. Record this measurement into column D.
+
+[NOTE]
+The difference between power levels in column B (dBm) and C (dBm) equals the loss in dB (column E). This is the existing loss. The difference between columns B and D is the maximum allowed loss without signal or performance degradation.
+
+== OTDR Deadzone
+
+The deadzone is the area in which an OTDR cannot make measurements. It is limited by the pulse width
+of the laser, the reflection of the front-panel connection and the bandwidth of the receiver (detector). The deadzone cannot be shorter than the sampling distance programmed into the instrument. OTDRs constantly compromise between dynamic range and deadzone. When one improves, the other degrades. Techniques such as optical masking are an exception to this rule. Considerations when selecting an OTDR for close measurements include the type of measurement being made, the strength of the reflection, and the OTDR’s bandwidth. There are two types of deadzone:
+
+`Event deadzone` - Sometimes called two-point spatial resolution, it is the minimum distance after a reflection in which an OTDR can accurately measure the distance to a second event. Because this measurement is determined from the leading edge of the reflection and the 3 dB drop from the top of the reflection, this number is not to be used for determining two-point loss.
+
+`Deadzone loss` - This is the minimum distance after a reflective event before an OTDR can accurately measure a nonreflective event.
+
+=== Masking
+
+Optical masking uses a fast optical switch (electro-optic or acousto-optic) in the return leg of the OTDR (between the coupler and the receiver) to mask the intense Fresnel reflection. The application is when two events, the first of which is reflective, have a tail from the amplifier’s response covering a nonreflective splice. The operator would place one marker (cursor) at the front edge and the other at the rear edge (peak) of the reflective event. This would eliminate the tail, allowing for closer measurements of the second nonreflective
+event. The deadzone is still limited by the pulse width, but it is much shorter without the tail.
+
+=== Measuring Reflectance with a Deadzone Box
+
+Testing for front-panel attenuation, reflectance, and the span’s optical return loss (ORL) requires a deadzone box with a connector and polish that match the connector under test. The far-end connector’s reflectance is tested using an optical terminator with matching polish and connector type, or a second deadzone box.
+
+.Measure Reflectance
+image::media/MeasureReflectance.png[align="center"]
+
+== OTDR Signatures
+
+image::media/ODTRnonreflective22.png[align='center']
+
+=== Nonreflective
+
+* Fusion splices
+* Fused biconical tapered splitters
+* Macro and microbends
+
+This signature is caused by a nonreflective loss of signal. The three common causes are the fusion splice, where the two fibers are melted together causing a low loss in signal or the macrobend and microbend, where the fibers are bent or pinched, causing light to escape from the
+fiber. The B marker is the correct location of the cursor placement.
+
+=== Reflective
+
+* Connectors
+* Mechanical splices
+* End of fiber span
+
+The reflective spike is caused by any surface that returns a reflection to the OTDR. Reflective signatures are caused by connectors, mechanical splices, and fiber ends and are called Fresnel reflections.
+
+image::media/ODTRdouble.png[align="center"]
+
+== Gainers on OTDR Traces
+
+.Gainer.
+image::media/ODTRspliceloss.png[align="center"]
+
+The OTDR trace shows a splice loss followed by an apparent gain at a splice point. A splice gain is a measurement artifact common on OTDR traces. There is no actual gain. When reporting splice loss, the OTDR makes the assumption that all fiber segments have the same backscatter capture coefficient, _K_, which can be a default or user entered. Typical values are -79 to -81 dB for standard G.652 fiber.
+
+Different fiber types —  even similar types from the same manufacturer —  may have small variations in K (ratio of backscatter captured). This can affect the apparent splice loss reported on the trace. If the downstream fiber has a higher K, and the difference is greater the actual splice loss, then the OTDR may report a gainer. These are usually very small, and may be small enough to be accepted in a one-way OTDR test.
+
+If the actual splice loss must be known to greater accuracy, then testing bidirectionally and averaging reported splice losses will yield more accurate values. This is because the backscatter change reverses sign in the opposite direction while the splice loss is actually the same in both directions.
+
+== Fiber Roll-off
+
+The trace of a fiber that gradually rolls off is the signature of a nonreflective broken fiber. The signature is common in cables where water or cable gel has created a nonreflective surface after a break. Since this break is usually poor, the optical signal is dispersed and does not have the power to return to the source.
+
+Fiber measurements should be made with the distance marker located at the point where the roll-off occurs. From this location, the distance equal to the operating pulse width must be subtracted to accurately locate the failure. The pulse width may vary with instruments, so it is best to check your operating manual
+for confirmation.
+
+.Nonreflective Loss
+image::media/NoneReflectiveLoss.png[align="center"]
+
+=== Causes of Fiber Roll-off
+
+* Breaks (fractured fiber).
+* Extreme macrobend.
+* Fractured fiber with gel surrounding the end.
+* Fractured fiber with moisture (water) surrounding the end.
+
+When testing a suspected break with the OTDR, it is important to confirm that the fiber is actually broken. Extreme macrobends can look like a roll-off signature, yet the cable’s internal fibers are still intact. To verify, put the OTDR into real-time mode and check all the dark fibers in the span. Once a fiber is identified with a Fresnel (reflective) signature, then we have a confirmation of a fiber break.
+
+The second advantage of this technique is that once a Fresnel reflection is located, it is easier to accurately place the OTDR’s distance cursor at the actual location of the break. Whenever possible, the OTDR operator should use the last splice location (closest to the fault) in the span to measure the distance to the fault. This will be more accurate than if done from the longer distance to the test equipment location, due to the differences in the fiber length versus the cable length in cable structures.
+
+== Testing Fiber Optic Splitters
+
+image::media/OpticSplitters2.png[float="right"]
+
+Fiber optic splitters (couplers) allow for cost savings in many networks. Testing spans with splitters requires power levels and loss measurements from each transmitter to each shared receiver. If testing transmit and receive FTTx power levels, the optical power meter must perform in-line handshaking for upstream measurements.
+
+image::media/OpticSplitters3.png[align="center"]
+
+=== Testing Through Optical Splitters
+
+Point-to-point insertion loss testing through fully-installed, long-haul networks measures the three basic components of a fiber optic system: connectors, splices, and the optical fiber. With the inclusion of optical splitters, the fiber plant expands from a single point-to-point system to a point-to-multipoint network. This not only includes attenuations from the components above, but also the higher loss of the splitter(s). One example would be if a network installation had a 1:4 splitter installed, approximately 6-7 dB of attenuation
+would be measured along with the components of the OSP for each of the four legs completed. A 1:32 splitter would incur 15.8 dB of attenuation.
+
+.Test by Optical Splitters.
+image::media/TestOpticalSplitter.png[align="center"]
+
+== Key Points to Understanding IOR
+
+* Index of refraction (IOR) is the ratio of the speed of light in a vacuum as compared to the fiber and is used to calibrate the OTDR to the fiber under test.
+* OTDRs measure fiber length, not cable length. The technician must compensate for additional fiber length by using the sequential cable markings to acquire correct cable length.
+* To accurately calibrate the OTDR, the technician must know the fiber size and type, the wavelength, and the manufacturer of the fiber.
+
+=== Index of Refraction
+
+Index of refraction is the ratio of the velocity of light in a vacuum to the velocity of light in a refractive material for a given wavelength.
+
+If light travels 186,291 miles per second in space (vacuum) and 126,642 in a single-mode fiber (at 1310 nm), then the ratio would be 1.471. The fact that the light travels at different speeds is important to understand. In fiber, the speed varies depending upon the construction of the type of glass and the wavelength of the light being transmitted. For multimode fiber, group mode velocity defines the average mode due to the multiple modes being transmitted.
+
+=== Does My OTDR Accurately Measure the Length of the Cable Being Tested?
+
+Probably not. The IOR numbers given to end users come from the fiber manufacturers, and not the cable manufacturers. There is a great amount of difference when measuring a single fiber on a fiber spool versus inside an optical cable.
+
+There are three major reasons why fiber lengths don’t match cable lengths:
+
+. `Fiber lay inside a loose tube buffer`. You will notice that the fiber length is actually longer than the buffer tube itself. This allows the cable and buffer tube to expand and contract without stressing the internal fiber.
+
+. `Buffer tubes wrapping around internal cables`. Buffer tubes do not lay lengthwise down an optical cable but spiral instead. First they will all spiral in one direction (clockwise) and periodically will reverse (counterclockwise). This extra length of buffer tube versus the cable jacket (sheath) length adds an additional variation in the fiber versus cable length.
+
+. `Inner and outer rows of buffer tubes`. When fiber counts within the cable exceed 72 fibers (six tubes with 12 fibers each), there is a high chance that the cable design is one provided in multiple rows of buffer tubes in both inner and outer positions. The inner row has less wrapping and total length, whereas the outer row must have larger wraps. Therefore, the internal fiber must be longer than those in the internal row. This requires extreme detailing on records. The inner layer fibers will be shorter and therefore use a different IOR. These must be traced to the correct patch panel connectors.
+
+=== How Do I Resolve This?
+
+This is resolved with the proper acceptance testing of a reel of cable. By testing the cable with an OTDR, you are in a position to change the factory IOR settings to those that will match the cable jacket’s sequential markings.
+
+For example, if the documentation specifies 1.471 at 1310 nm and the shipping documentation on the reel shows the cable length to be 5,000 meters, the OTDR would measure the length at approximately 5,150 meters, assuming a 3% variation in fiber length.
+
+Now check the sequential markings on the cable. If the difference measures to be 5,004 meters, then the IOR (which controls the timing) must be adjusted on the OTDR to compensate for the actual cable length versus the actual fiber length. In this case, we would increase the IOR until the OTDR length matches that of the cable under test. Remember the OTDR will measure from the instrument’s front panel, unless
+programmed otherwise.
+
+Also remember to check both inner and outer layers for different CIR (cable index of refraction) settings. These recordings should be noted in any maintenance and restoration plans for more accurate locates.
+
+How else can you increase accuracy? Through better documentation titled _as-builts_ or _as-built drawings._ These will identify a sequential marking on a cable to a fixed geographic point. If a cable has been damaged 2,000 meters from the fourth splice point in a span, it is far easier to measure (using a two-point technique) from the last (known) splice point to the fault than from the patch panel to the fault.
+
+Accuracy also includes factors such as distance so the closer to a known point the better. Another way to address this is to question which is more accurate: 1% at 2,000 meters, or 1% from 19,000 meters?
+
+== Multimode IOR Accuracy Settings
+
+These values are given for general reference. Always check with your fiber manufacturer for current specifications.
+
+|===
+|*Manufacturer* |*Name* |*IEC* |*Size* |*850 nm*|*1300 nm*
+.2+^|Alcatel|Gigalite||62.5/125|1.497|1.492|Gigalite||50/125|1.482|1.480
+
+.6+^|Corning|ClearCurve|OM2/3/4|50/125|1.480|1.479|SX+|OM2|50/125|1.496|1.491|eSX+|OM3|50/125|1.481|1.476|Infinicor 300|OM1|62.5/125|1.496|1.491|Infinicor 600|OM2|50/125|1.481|1.476|Infinicor CL 1000|OM1|62.5/125|1.496|1.491
+
+.5+^|OFS
+|Standard|OM2|50/125|1.483|1.479|Laser Wave G+|OM2|50/125|1.483|1.479|Standard|OM1|62.5/125|1.492|1.488|GigaGuide|OM1|62.5/125|1.496|1.491|BFO4432||100/140|1.497|1.492
+
+.2+^|Prysmian/Draka|Max Cap|OM2/3/4|50/125|1.482|1.477|Hi-Cap|OM1|62.5/125|1.496|1.491
+
+.2+^|Sumitomo|Standard||50/125|1.484|1.479|Standard||62.5/125|1.496|1.491
+|===
+
+=== Accuracy as a Measurement of Index of Refraction
+
+|===
+|*Distance/IOR* ^|*1.471* ^|*1.472* ^|*1.461*
+|100 feet| 100 feet (0 feet)| 100 feet (0 feet)| 101 feet (1 foot)
+|500 feet| 500 feet (0 feet)| 499 feet (-1 foot)|503 feet (3 feet)
+|1,000 feet| 1,000 feet (0 feet)| 999 feet (-1 foot)| 1,006 feet (6 feet)
+|2,500 feet| 2,500 feet (0 feet)| 2,498 feet (-2 feet)| 2,517 feet (17 feet)
+|5,000 feet| 5,000 feet (0 feet)| 4,996 feet (-4 feet)| 5,034 feet (34 feet)
+|7,500 feet| 7,500 feet (0 feet)| 7,495 feet (-5 feet)| 7,552 feet (52 feet)
+|10,000 feet| 10,000 feet (0 feet)| 9,993 feet (-7 feet)| 10,068 feet (68 feet)
+|20,000 feet| 20,000 feet (0 feet)| 19,987 feet (-13 feet)| 20,137 feet (137 feet)
+|30,000 feet| 30,000 feet (0 feet)| 29,980 feet (-20 feet)| 30,206 feet (206 feet)
+|===
+
+[NOTE]
+====
+1. Instrument was calibrated at 1.471 and measurements were made at other settings to demonstrate accuracy from one IOR to another. The wavelength tested was at 850-nm multimode.
+2. Contact your manufacturer or test reports for the proper multimode IOR.
+3. Different wavelengths have different IOR because they travel at different speeds through the glass.
+====
+
+== Single-mode IOR Accuracy Settings
+
+These values are for general reference. Always check with your fiber manufacturer for current specifications.
+|===
+|*Manufacturer* |*Name* |*ITU* |*1310 nm*|*1550 nm*|*1625 nm*
+|Corning|SMF-28e+ +
+SMF-28e+ LL +
+SMF-28 ULL +
+Leaf
+|G.652D +
+G.652D +
+G.652 +
+G.655 +
+|1.467 +
+1.467 +
+1.467 +
+1.468 +
+|1.468 +
+1.468 +
+1.468 +
+1.469 +
+|- + 
+- +
+- +
+-
+|OFS|AllWave ZWP +
+TruWave Reach +
+TruWave RS LWP +
+AllWave Flex +
+AllWave Flex+ +
+|G.652D +
+G.655 +
+G.655 +
+G.657 +
+G.657 +
+|1.467 +
+1.471 +
+1.471 +
+1.467 +
+1.467 +
+|1.468 +
+1.470 +
+1.470 +
+1.468 +
+1.468 +
+|1.468 +
+1.470 +
+1.470 +
+- +
+- +
+|Prysmian/Draka|ESMF +
+Teralight +
+Teralight Ultra +
+BendBright +
+BendBright Elite +
+BendBright XS +
+|G.652D +
+G.655 +
+G.655 +
+G.657 +
+G.657 +
+G.657 +
+|1.467 +
+1.468 +
+1.468 +
+1.467 +
+1.467 +
+1.467 +
+|1.468 +
+1.468 +
+1.468 +
+1.468 +
+1.467 +
+1.467 +
+|1.468 +
+- +
+- +
+1.468 +
+1.468 +
+1.468 +
+|Sterlite +
+|OH-LITE +
+DOF-LITE +
+BOW-LITE +
+|G.652D +
+G.655 +
+G.657 +
+|1.467 +
+- +
+1.4678 +
+|1.4675 +
+1.470 +
+1.4685 +
+|1.468 +
+- +
+1.4689 +
+|Sumitomo|PureAdvance +
+PureBand +
+PureAccess +
+PureAccess-R5 +
+PureAccess-A2|G.652 +
+G.652D +
+G.657 +
+G.657 +
+G.657|1.462 +
+1.466 +
+1.466 +
+1.467 +
+1.466|1.462 +
+1.467 +
+1.467 +
+1.468 +
+1.467 +
+|1.462 +
+1.470 +
+- +
+1.469 +
+1.470 +
+|===
+
+== Accuracy as a Measurement of Index of Refraction
+
+.Index of Refraction.
+[cols=4,options="header"]
+|===
+| ^|*1.471* ^|*1.472* ^|*1.481* ^|
+1 km variance ^|
+1,000 m + 
+ -0- ^|
+998 m -2 m ^|
+992 m -8 m ^|
+5 km variance ^|
+5,000 m +
+ -0- ^|
+4,995 m -5 m ^|
+4,966 m -34 m ^|
+10 km variance ^|
+10,000 m + 
+-0- ^|
+9,993 m -7 m ^|
+9,934 m -66 m ^|
+20 km variance ^|
+20,000 m +
+-0- ^|
+19,985 m -15 m ^|
+19,865 m -135 m ^|
+30 km variance ^|
+30,000 m + 
+-0- ^|
+29,978 m -22 m ^|
+29,796 m -204 m ^|
+40 km variance ^|
+40,000 m +
+ -0- ^|
+39,978 m -27 m  ^|
+39,730 m -270 m ^|
+50 km variance ^|
+50,000 m +
+ -0- ^|
+49,966 m -34 m ^|
+49,644 m -366 m ^|
+|===
+
+[NOTE]
+====
+1. Instrument was calibrated at 1.471 and measurements were made at other settings to demonstrate accuracy from one IOR to another. The wavelength tested was at 1310-nm single-mode. 
+2. The IOR numbers above are for single-mode fibers. Contact your fiber manufacturer or examine the manufacturer’s test reports for the proper single-mode IOR.
+====
+
+== Documentation Issues For Emergency Restorations
+
+* Develop a restoration plan during OSP system design.
+* Compile a final _as-built_ report.
+* Acquire cable data manual (supplied by cable manufacturer).
+* Cable manufacturer.
+.. Fiber manufacturer and type.
+.. Index of refraction (IOR).
+.. Optical performance (OTDR prints).
+.. Bandwidth/dispersion data.
+.. Traceability.
+.. Date of installation.
+* Determine routing plan for cable.
+* Prioritize circuits.
+* Create attenuation report (optical loss test report).
+* Conversion factors for feet/meters-kilometers.
+* Prepare bill of materials for emergency restoration kit.
+.. Material list.
+.. Ordering information.
+.. Date coded issues.
+.. Instructions.
+
+.Documentation Issues
+
+image::media/DocumentationError.png[align="center"]

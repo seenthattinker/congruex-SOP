@@ -1,0 +1,498 @@
+= Glossary
+
+== A
+Absorption::
+That portion of fiber optic attenuation resulting of
+conversion of optical power to heat. 
+Analog::
+Signals that are continually changing, as opposed to being
+digitally encoded. 
+APC::
+Angled Physical Contact, APC Connector 
+Attenuation Coefficient::
+Characteristic of the attenuation of an optical
+fiber per unit length, in dB/km. 
+Attenuation::
+The reduction in optical power as it passes along a fiber,
+usually expressed in decibels (dB). See Loss, optical. 
+Attenuator::
+A device that reduces signal power in a fiber optic link by
+inducing loss. 
+Average power::
+The average over time of a modulated signal. 
+
+
+== B
+Back reflection (obsolete term), reflectance, optical return loss::
+Light
+reflected from the cleaved or polished end of a fiber caused by the
+difference of refractive indices of air and glass. Typically 4% of the
+incident light. Expressed in dB relative to incident power. 
+Backscattering::
+The scattering of light in a fiber back toward the
+source, used to make OTDR measurements. 
+
+Bandwidth::
+The range of signal frequencies or bit rate within which a
+fiber optic component, link or network will operate. 
+Bend-Insensitive Multimode Fiber::
+Multimode fiber that is designed to
+provide decreased macrobend loss. 
+Bend Radius::
+The minimal radius below which a cable should not be bent.
+For fiber optic cables, the normal limit is 20 times the cable diameter
+under tension (e.g. while being pulled) and 10 times when not under
+stress.
+
+ Bending loss, microbending loss::
+Loss in fiber caused by stress on the
+fiber bent around a restrictive radius. 
+BIMMF::
+Abbreviation for bend-insensitive multimode fiber
+
+Bit-error rate (BER)::
+The fraction of data bits transmitted that are
+received in error. 
+Bit::
+An electrical or optical pulse that carries information. 
+Buffer::
+A protective coating applied directly on the fiber.
+
+
+== C
+Cable::
+One or more fibers enclosed in protective coverings and in some
+cable constructions, strength members, stiffeners, water blocking
+compounds or other components. 
+Cable Plant, Fiber Optic::
+The combination of fiber optic cable sections,
+connectors and splices forming the optical path between two terminal
+devices. 
+CATV::
+An abbreviation for Community Antenna Television or cable TV. 
+Chromatic dispersion::
+The temporal spreading of a pulse in an optical
+waveguide caused by the wavelength dependence of the velocities of
+light. 
+Cladding::
+The lower refractive index optical coating over the core of
+the fiber that "traps" light into the core. 
+
+Connector::
+A device that provides for a demountable connection between
+two fibers or a fiber and an active device and provides protection for
+the fiber. 
+
+Connection::
+the joining of two optical fibers made by mating two fiber
+optic connectors with a mating adapter if required..
+
+Core::
+The center of the optical fiber through which light is
+transmitted. 
+Coupler::
+An optical device that splits or combines light from more than
+one fiber. 
+Cutback method::
+A technique for measuring the loss of bare fiber by
+measuring the optical power transmitted through a long length then
+cutting back to the source and measuring the initial coupled power. 
+Cutoff wavelength::
+The wavelength beyond which singlemode fiber only
+supports one mode of propagation.
+
+
+== D
+dBm::
+Optical power referenced to 1 milliwatt. 
+Decibel (dB)::
+A unit of measurement of optical power which indicates
+relative power on a logarithmic scale, sometimes called dBr. dB=10 log (
+power ratio) 
+Detector::
+A photodiode that converts optical signals to electrical
+signals. 
+Digital::
+Signals encoded into discrete bits. 
+Dispersion::
+The temporal spreading of a pulse in an optical waveguide.
+May be caused by modal or chromatic effects.
+
+
+== E
+EDFA::
+Erbium-doped fiber amplifier, an all optical amplifier for 1550 nm
+SM transmissionsystems. 
+Edge-emitting diode (E-LED)::
+A LED that emits from the edge of the
+semiconductor chip, producing higher power and narrower spectral
+width. 
+Encircled Flux::
+The total optical power, as a function of radius,
+emanating from a source. Encircled flux has been applied to measuring
+the power distribution within graded-index multimode fiber.
+
+End finish::
+The quality of the end surface of a fiber prepared for
+splicing or terminated in a connector. 
+Equilibrium modal distribution (EMD)::
+Steady state modal distribution in
+multimode fiber, achieved some distance from the source, where the
+relative power in the modes becomes stable with increasing distance. 
+ESCON::
+IBM standard for connecting peripherals to a computer over fiber
+optics. Acronym for Enterprise System Connection.
+
+Excess loss::
+The amount of light lost in a coupler, beyond that inherent
+in the splitting to multiple output fibers. 
+Expanded Beam Connector::
+A connector in which the diameter of the light
+beam and the launch angle are increased by a lens, so that the losses
+caused by longitudinal off-set and lateral off-set are reduced to a
+minimum. 
+
+
+
+== F
+
+Fiber::
+see Optical Fiber.
+
+Fiber Amplifier::
+an all optical amplifier using erbium or other doped
+fibers and pump lasers to increase signal output power without
+electronic conversion. 
+Fiber Distributed Data Interface, FDDI::
+100 Mb/s ring architecture data
+network. 
+Ferrule::
+A precision tube which holds a fiber for alignment for
+interconnection or termination. A ferrule may be part of a connector or
+mechanical splice. 
+Fiber tracer::
+An instrument that couples visible light into the fiber to
+allow visual checking of continuity and tracing for correct
+connections. 
+Fiber identifier::
+A device that clamps onto a fiber and couples light
+from the fiber by bending, to identify the fiber and detect high speed
+traffic of an operating link or a 2 kHz tone injected by a test
+source. 
+Fiber optics::
+Light transmission through flexible transmissive fibers
+for communications or lighting. 
+FO::
+Common abbreviation for "fiber optic." 
+Fresnel reflection, reflection, back reflection, optical return loss::
+
+Light reflected from the cleaved or polished end of a fiber caused by
+the difference of refractive indices of air and glass. Typically 4% of
+the incident light.
+
+FTTH::
+fiber to the home 
+Fusion splicer::
+An instrument that splices fibers by fusing or welding
+them, typically by electrical arc.
+
+
+== G
+Graded index (GI)::
+A type of multimode fiber which used a graded profile
+of refractive index in the core material to correct for dispersion.
+
+
+== I
+Index of refraction::
+A measure of the speed of light in a material. 
+Index matching fluid::
+A liquid used of refractive index similar to glass
+used to match the materials at the ends of two fibers to reduce loss and
+back reflection. 
+Index profile::
+The refractive index of a fiber as a function of cross
+section. 
+Insertion loss::
+The loss caused by the insertion of a component such as
+a splice or connector in an optical fiber.
+
+
+== J
+Jacket::
+The protective outer coating of the cable. 
+Jumper cable::
+A short single fiber cable with connectors on both ends
+used for interconnecting other cables or testing.
+
+
+== L
+Laser diode, ILD::
+A semiconductor device that emits high powered,
+coherent light when stimulated by an electrical current. Used in
+transmitters for singlemode fiber links.
+
+Laser Optimized Multimode Fiber::
+A high bandwidth optical fiber
+optimized for enhanced performance with laser sources at a particular
+wavelength, e.g. an 850 nm laser optimized multimode fiber. 
+Launch cable::
+A known good fiber optic jumper cable attached to a source
+and calibrated for output power used as a reference cable for loss
+testing. This cable must be made of fiber and connectors of a matching
+type to the cables to be tested. 
+Least Squares::
+The least squares method is a statistical procedure to find the best fit for a set of data points by minimizing the sum of the offsets or residuals of points from the plotted curve. Least squares regression is used to predict the behavior of dependent variables. footnote:[https://en.wikipedia.org/wiki/Least_squares]
+Light-emitting diode, LED::
+A semiconductor device that emits light when
+stimulated by an electrical current. Used in transmitters for multimode
+fiber links. 
+Link, fiber optic::
+A combination of transmitter, receiver and fiber
+optic cable connecting them capable of transmitting data. May be analog
+or digital. 
+Long wavelength::
+A commonly used term for light in the 1300 and 1550 nm
+ranges. 
+Loss,optical::
+The amount of optical power lost as light is transmitted
+through fiber, splices, couplers, etc. 
+Loss budget::
+The amount of power lost in the link. Often used in terms
+of the maximum amount of loss that can be tolerated by a given link.
+
+
+== M
+Margin::
+The additional amount of loss that can be tolerated in a link. 
+Mechanical splice::
+A semi-permanent connection between two fibers made
+with an alignment device and index matching fluid or adhesive. 
+Micron (*m)::
+A unit of measure, 10-6 m, used to measure wavelength of
+light. 
+Microscope, fiber optic inspection::
+A microscope used to inspect the end
+surface of a connector for flaws or contamination or a fiber for cleave
+quality.
+
+Microcable::
+Small diameter fiber optic cable made with bend-insensitive
+fiber. 
+
+Microtrenching::
+A method of installing fiber optic cable using narrow
+trenches sawed in dirt, pavement or sidewalks. 
+Modal dispersion::
+The temporal spreading of a pulse in an optical
+waveguide caused by modal effects. 
+Mode field diameter::
+A measure of the core size in singlemode fiber. 
+Mode filter::
+A device that removes optical power in higher order modes
+in fiber. 
+Mode scrambler::
+A device that mixes optical power in fiber to achieve
+equal power distribution in all modes. Mode stripper::
+A device that
+removes light in the cladding of an optical fiber. 
+Mode::
+A single electromagnetic field pattern that travels in fiber. 
+Multimode fiber::
+A fiber with core diameter much larger than the
+wavelength of light transmitted that allows many modes of light to
+propagate. Commonly used with LED sources for lower speed, short
+distance links.
+
+
+== N
+Nanometer (nm)::
+A unit of measure , 10-9 m, used to measure the
+wavelength of light. 
+Network::
+A system of cables, hardware and equipment used for
+communications. 
+Numerical aperture (NA)::
+A measure of the light acceptance angle of the
+fiber.
+
+
+== O
+
+ODTR Trace::
+An OTDR trace is a graphical signature of a fiber's attenuation along its length which provides insight into the performance of the link components (cable, connectors and splices) and the quality of the installation by examining non-uniformities in the OTDR trace.
+
+Optical amplifier::
+A device that amplifies light without converting it
+to an electrical signal. 
+Optical fiber::
+An optical waveguide, comprised of a light carrying core
+and cladding which traps light in the core. 
+Optical loss test set (OLTS)::
+An measurement instrument for optical loss
+that includes both a meter and source. 
+Optical power meter::
+The amount of radiant energy per unit time, expressed in
+linear units of Watts or on a logarithmic scale, in dBm (where 0 dB = 1
+mW) or dB* (where 0 dB*=1 microWatt). 
+
+
+
+Optical return loss, back reflection::
+Light reflected from the cleaved
+or polished end of a fiber caused by the difference of refractive
+indices of air and glass. Typically 4% of the incident light. Expressed
+in dB relative to incident power. 
+Optical switch::
+A device that routes an optical signal from one or more
+input ports to one or more output ports. 
+Optical time domain reflectometer (OTDR)::
+An instruments that used
+backscattered light to find faults in optical fiber and infer loss. 
+Overfilled launch::
+A condition for launching light into the fiber where
+the incoming light has a spot size and NA larger than accepted by the
+fiber, filling all modes in the fiber.
+
+
+== P
+Photodiode::
+A semiconductor that converts light to an electrical signal,
+used in fiber optic receivers. 
+Pigtail::
+A short length of fiber attached to a fiber optic component
+such as a connector, laser or coupler. 
+Plastic optical fiber (POF)::
+An optical fiber made of plastic. 
+Plastic-clad silica (PCS) fiber::
+A fiber made with a glass core and
+plastic cladding. 
+POF::
+plastic optical fiber, optical fiber made from polymer materials.
+
+Power budget::
+The difference (in dB) between the transmitted optical
+power (in dBm) and the receiver sensitivity (in dBm). 
+Power meter, fiber optic::
+An instrument that measures optical power
+emanating form the end of a fiber. 
+Preform::
+The large diameter glass rod from which fiber is drawn.
+
+
+== R
+Receive cable::
+A known good fiber optic jumper cable attached to a power
+meter used as a reference cable for loss testing. This cable must be
+made of fiber and connectors of a matching type to the cables to be
+tested. 
+Receiver::
+A device containing a photodiode and signal conditioning
+circuitry that converts light to an electrical signal in fiber optic
+links.
+
+Reference cable::
+ A known good fiber optic jumper cable attached to a
+light source or power meter used as a reference cable for loss testing.
+
+Reflectance::
+Light reflected from the cleaved or polished end of a fiber
+caused by the difference of refractive indices of air and glass.
+
+Refractive index::
+A property of optical materials that relates to the
+velocity of light in the material.
+
+Repeater, regenerator::
+A device that receives a fiber optic signal and
+regenerates it for retransmission, used in very long fiber optic links.
+
+== S
+Scattering::
+The change of direction of light after striking small
+particles that causes loss in optical fibers. 
+Short wavelength::
+A commonly used term for light in the 665, 790, and
+850 nm ranges. 
+Singlemode fiber::
+A fiber with a small core, only a few times the
+wavelength of light transmitted, that only allows one mode of light to
+propagate. Commonly used with laser sources for high speed, long
+distance links. 
+Source::
+A laser diode or LED used to inject an optical signal into
+fiber. 
+SOC::
+splice-on connector, termination with a factory made connector
+attached with a fusion splicer 
+
+Splice (fusion or mechanical)::
+A device that provides for a connection
+between two fibers, typically intended to be permanent. 
+Splitting ratio::
+The distribution of power among the output fibers of a
+coupler. 
+Steady state modal distribution::
+Equilibrium modal distribution (EMD) in
+multimode fiber, achieved some distance from the source, where the
+relative power in the modes becomes stable with increasing distance. 
+Step index fiber::
+A multimode fiber where the core is all the same index
+of refraction. 
+Surface emitter LED::
+A LED that emits light perpendicular to the
+semiconductor chip. Most LEDs used in datacommunications are surface
+emitters. 
+
+
+== T
+Talkset, fiber optic::
+A communication device that allows conversation
+over unused fibers. 
+Termination::
+Preparation of the end of a fiber to allow connection to
+another fiber or an active device, sometimes also called
+"connectorization". 
+Test cable::
+A short single fiber jumper cable with connectors on both
+ends used for testing. This cable must be made of fiber and connectors
+of a matching type to the cables to be tested. 
+Test kit::
+A kit of fiber optic instruments, typically including a power
+meter, source and test accessories used for measuring loss and power. 
+Test source::
+A laser diode or LED used to inject an optical signal into
+fiber for testing loss of the fiber or other components. 
+Total internal reflection::
+Confinement of light into the core of a fiber
+by the reflection off the core-cladding boundary. 
+Transmitter::
+A device which includes a LED or laser source and signal
+conditioning electronics that is used to inject a signal into fiber.
+
+
+== V
+VCSEL::
+vertical cavity surface emitting laser, a type of laser that
+emits light vertically out of the chip, not out the edge, widely used in
+fast multimode networks. 
+Visual fault locator::
+A device that couples visible light into the fiber
+to allow visual tracing and testing of continuity. Some are bright
+enough to allow finding breaks in fiber through the cable jacket.
+
+
+== W
+Watts::
+A linear measure of optical power, usually expressed in
+milliwatts (mW), microwatts (*W) or nanowatts (nW). 
+Wavelength::
+A measure of the color of light, usually expressed in
+nanometers (nm) or microns (*m). 
+Wavelength division multiplexing (WDM)::
+A technique of sending signals
+of several different wavelengths of light into the fiber
+simultaneously. 
+Working margin::
+The difference (in dB) between the power budget and the
+loss budget (i.e. the excess power margin). 

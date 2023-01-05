@@ -1,0 +1,58 @@
+
+= OTDR
+
+The Optical time-domain reflectometer (OTDR) is a main tool in the field.
+It is an optoelectronic instrument to define and delimit  optical fiber, 
+the optical equivalent of an electronic time domain reflectometer to measures the impedance of the cable or transmission line under test. 
+It injects optical pulses into the fiber.
+The scattered or reflected light returned defines and delimits the optical fiber. 
+The strength of the return pulses is measured and integrated as a function of time, and plotted as a function of length of the fiber. footnote:[https://en.wikipedia.org/wiki/Optical_time-domain_reflectometer]
+
+The following SOPs define how to auto test and how to calibrate a test.
+
+
+== Auto Test
+
+. Turn on the OTDR. 
+It takes a few seconds to boot up.
+. You see a choice between test or setup. 
+. Hit autotest.
+.. The OTDR selects its parameters, takes a period, analyzes it, and gives the results. It should not take longer than a few seconds.
+. Now change the distance to two kilometers.
+
+== Calibrated Test
+
+. Change the distance to two kilometers.
+. Change the pulse width to six nanoseconds, the shortest allowable. This is fine on a one kilometer length. 
+. Change the measurement time to 15 seconds to reduce the noise.
+. Save the settings.
+. Run the trace again.
+
+[TIP]
+The trace is very clean when the parameters are set correctly. 
+How do we get a clean trace? 
+When the OTDR choses its own parameters for an auto test,
+it shows a 25 nanosecond wide test pulse.
+There is a lot of excess energy in the pulse.
+It is part of what causes the ghosts in the trace.
+The narrowest pulse available to us maximizes the resolution of the OTDR
+&mdasah;
+important when measuring short cables
+&mdash;
+reducing the amount of energy in the pulse, 
+and the ghosting.
+
+== Best Practice
+
+. Know the cable plants you are testing.
+. Choose optimum parameters for that cable.
+. Choose your test by choosing the appropriate pulse width. 
+. Know the best resolution and distance trade-offs on every trace.
+. Know how long the cable plant is, and how the OTDR trace is affected by the pulse width.
+. The correct pulse width is always mandatory to analyze the trace properly.
+. Document your cable jobs so future testers know the cable lengths.
+
+
+== See Also
+
+

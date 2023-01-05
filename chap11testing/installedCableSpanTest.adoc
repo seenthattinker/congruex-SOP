@@ -1,0 +1,48 @@
+= Installed Cable Span between Patch Panels
+
+
+In telecommunications, a span is a section of a telecommunications cable that is typically composed of a number of twisted pairs or fibers. The term "span" is used to describe the distance that a signal is transmitted over a particular cable. The length of a span is determined by the type of cable used, as well as the signal frequency and the strength of the signal being transmitted. In general, the longer the span, the more signal loss will occur, so it is important to use cables with a high signal-to-noise ratio and to amplify the signal at regular intervals along the span.
+
+== Purpose
+
+In a telecom system, patch panels are used to connect incoming and outgoing cables in a structured cabling system. The patch panel serves as a central hub for the cables, allowing them to be easily connected and disconnected as needed. The installed cable span between patch panels is the distance between two patch panels, and it is used to test the cables that run between them.
+
+There are several reasons why it is important to test the installed cable span between patch panels:
+
+. To ensure that the cables are properly connected and functioning correctly
+. To identify any problems or issues with the cables, such as breaks or shorts
+. To measure the performance of the cables, including factors such as signal strength and noise levels
+. To verify that the cables meet the necessary standards and specifications for the telecom system.
+
+Overall, the purpose of the installed cable span test is to ensure that the cables are functioning properly and meeting the necessary performance standards, which is critical for the operation of the telecom system.
+
+== Requirements
+
+Includes the loss of the optical cable and terminations performed by the installers. Test standard: TIA-526-14B (Annex C, two-cord reference method) This test is usually performed by the installer as they normally are responsible for the installation of the fiber optic cable, the end terminations and the mating of the connectors into the proper adaptor sleeves
+at patch panels. The fibers in the cables are identified by the TIA-598 color code standard and would mate to the appropriate numbered adapter ports at patch panels.
+
+During the reference testing using two jumpers, one complete connection (two connectors and one adaptor) are zeroed or removed from the test to be performed. As the test will occur between two patch panels terminated with a connector at each end and one additional adaptor, the attenuation measured is the loss of one connection and the fiber span. This technique does not include the loss of the patch cords to be
+added later to terminate between the transmission equipment and the fiber span.
+
+
+== Process
+
+To perform an installed cable span test between patch panels, you will need to have access to the patch panels and a device for testing the cables. Here are the general steps for performing this test:
+
+. Locate the patch panels that you want to test. These are typically found in a telecommunications closet or other central location.
+
+. Identify the cables that you want to test. These will typically be labeled with the location they are connected to.
+
+. Connect one end of the testing device to the patch panel at one end of the cable span.
+
+. Connect the other end of the testing device to the patch panel at the other end of the cable span.
+
+. Follow the instructions for the testing device to initiate a test of the cable span. The device will typically send a signal through the cables and measure the strength of the signal at the other end.
+. 
+Review the results of the test. If the signal strength is within acceptable limits, the cables are functioning properly. If the signal strength is too low, there may be a problem with the cables or the patch panels.
+
+
+[IMPORTANT]
+It's important to note that the results of the test may be affected by the length of the cable span, as well as any obstacles or interference that may be present. To get an accurate measurement, it's important to carefully control for these variables.
+
+== See Also
