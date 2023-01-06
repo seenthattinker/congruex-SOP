@@ -46,6 +46,22 @@ To perform an Optical Time-Domain Reflectometer (OTDR) test, you will need the f
 
 . Optionally, you may also need a power source for the OTDR, as well as any additional equipment or accessories that are required by the specific OTDR that you are using.
 
+=== ODTR Configuration Parameters
+
+There are a number of configuration parameters that can be adjusted on an OTDR in order to customize the test and obtain accurate results. Here are a few examples of common OTDR configuration parameters:
+
+. Wavelength: The wavelength of the light pulse that is transmitted through the fiber optic cable can be adjusted on an OTDR. Different wavelengths may be used depending on the specific characteristics of the fiber optic cable being tested.
+
+. Pulse width: The pulse width of the light pulse that is transmitted through the fiber optic cable can be adjusted on an OTDR. A shorter pulse width can provide more detailed information about the fiber optic cable, but may require a higher level of signal-to-noise ratio.
+
+. Dynamic range: The dynamic range of an OTDR refers to the range of signal levels that the instrument can accurately measure. A higher dynamic range allows the OTDR to measure a wider range of signal levels, but may result in a lower resolution.
+
+. Event threshold: The event threshold on an OTDR is used to determine the minimum reflectance that will be considered as a significant event. Adjusting the event threshold can help to filter out noise and improve the accuracy of the measurement.
+
+. Dead zone: The dead zone on an OTDR is the distance at the beginning of the fiber optic cable that is not measured by the instrument. The dead zone is used to account for the propagation delay of the light pulse through the OTDR's electronics.
+
+These are just a few examples of the configuration parameters that can be adjusted on an OTDR. The specific parameters that are available and their ranges will depend on the specific model of OTDR being used.
+
 == Auto Test
 
 To perform an OTDR auto test, you will need to follow these steps:

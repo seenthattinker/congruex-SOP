@@ -1,0 +1,91 @@
+= Cables Assemblies test
+
+A cables assemblies test is a procedure that is used to evaluate the performance and reliability of a cable assembly. A cable assembly is a group of cables that are joined together in a specific configuration to transmit data or power.
+
+There are many different types of cables assemblies tests that can be performed, depending on the specific requirements of the assembly. Some common types of cables assemblies tests include:
+
+. Continuity test: This test is used to verify that all of the wires in the cable assembly are properly connected and that there are no breaks or defects in the wires.
+
+. Resistance test: This test is used to measure the resistance of the wires in the cable assembly. It is typically performed to ensure that the wires are of the correct size and that they are able to carry the required current.
+
+. Insulation resistance test: This test is used to measure the resistance of the insulation around the wires in the cable assembly. It is typically performed to ensure that the insulation is able to withstand the required voltage.
+
+. Dielectric strength test: This test is used to measure the ability of the insulation around the wires in the cable assembly to withstand electrical stress. It is typically performed to ensure that the insulation is able to withstand the required voltage without breaking down.
+
+. Mechanical strength test: This test is used to evaluate the physical strength and durability of the cable assembly. It is typically performed to ensure that the cable assembly is able to withstand the required forces and environments.
+
+These are just a few examples of the types of cables assemblies tests that can be performed. The specific tests that are performed will depend on the specific requirements of the cable assembly being tested.
+
+[NOTE]
+In specialty applications including data centers and military/aerospace, connectors with a male (pin) and female (socket) configuration require a three-cord test.
+
+
+The test requires three test reference cords (TRC1, TRC2, TRC3). TRC1 and TRC2 will be terminated with the connector matching your test equipment on one end and the connector matching the link under test on the other end. Connect TRC1 to the light source and TRC2 to the power meter. Insert TRC3, which will have the same connectors as your link under test, between TRC1 and TRC2 and document the power level. Now remove TRC3 and substitute the link under test and document the added loss.
+
+If the end user wants to know the attenuation level between the transmitter and receiver locations, the optical power level must be measured from the transmitter (in dBm), as well as the received power level at the receiver (in dBm). The loss between the Tx and the Rx is the difference between the two power measurements (dBm minus dBm = dB).
+
+== Purpose
+
+The purpose of a cables assemblies test is to evaluate the performance and reliability of a cable assembly. A cable assembly is a group of cables that are joined together in a specific configuration to transmit data or power.
+
+Cables assemblies tests are typically performed to ensure that the cable assembly meets the required specifications and standards. They can be used to identify problems with the cable assembly, such as broken wires or defective insulation, and to verify that the cable assembly is able to perform as intended.
+
+In addition to identifying problems and verifying performance, cables assemblies tests can also be used to ensure the safety of the cable assembly. For example, a dielectric strength test can be used to ensure that the insulation around the wires in the cable assembly is able to withstand the required voltage without breaking down, which can prevent electrical accidents.
+
+Overall, the purpose of a cables assemblies test is to ensure the quality, reliability, and safety of the cable assembly being tested.
+
+== Requirements
+
+
+The requirements for a cables assemblies test in telecom will depend on the specific characteristics of the cable assembly being tested and the specific tests that are being performed. Here are a few general requirements that may be common to many cables assemblies tests in telecom:
+
+. Test equipment: Depending on the specific tests being performed, you may need specialized test equipment, such as an Optical Time Domain Reflectometer (OTDR), a power meter, or a vector network analyzer.
+
+Cables assembly: The cable assembly that you want to test will be required for the test.
+
+. Test setup: Depending on the specific tests being performed, you may need to set up the cable assembly in a specific way in order to perform the tests. For example, you may need to attach connectors to the ends of the cable assembly, or you may need to attach the assembly to a power source.
+
+. Test procedures: Each cables assemblies test will have a specific procedure that you need to follow in order to perform the test. These procedures will typically include steps for preparing the cable assembly and the test equipment, as well as steps for performing the tests themselves.
+
+. Safety precautions: Many cables assemblies tests involve working with electricity or high voltages, and it is important to follow appropriate safety precautions to prevent accidents. This may include wearing protective equipment, such as gloves and safety glasses, and following proper procedures for handling electrical equipment.
+
+. Telecom standards: In telecom applications, it is often necessary to ensure that the cable assembly meets certain standards or specifications. These standards may relate to factors such as attenuation, cross-talk, and return loss. It is important to ensure that the cable assembly meets these standards in order to ensure the performance and reliability of the telecom system.
+
+Overall, the specific requirements of a cables assemblies test in telecom will depend on the specific tests being performed and the specific characteristics of the cable assembly being tested.
+
+== Procedure
+
+=== Bidirectional Attenuation test
+
+To perform a cables assemblies test for bidirectional attenuation, you will need to follow these steps:
+
+. Gather the necessary equipment: You will need an appropriate test instrument, such as an Optical Time Domain Reflectometer (OTDR) or a power meter, as well as the cable assembly that you want to test. You may also need connectors or other accessories, depending on the specific configuration of your cable assembly.
+
+. Set up the test equipment: Follow the manufacturer's instructions to set up the test instrument and any other necessary equipment. This may involve connecting the instrument to a power source and installing any necessary software or drivers.
+
+. Connect the cable assembly: Attach connectors to the ends of the cable assembly and connect the assembly to the test instrument according to the manufacturer's instructions.
+
+. Set up the test parameters: Configure the test instrument to perform a bidirectional attenuation test. This may involve setting the wavelength, pulse width, and other relevant parameters.
+
+. Perform the test: Initiate the test by following the prompts on the test instrument's display. The instrument will transmit a signal through the cable assembly and measure the amount of attenuation that occurs in both directions.
+
+. Record the results: Record the results of the test, including any measurements or graphs that are displayed by the test instrument.
+
+. Analyze the results: Review the results of the test to determine if the cable assembly meets the required specifications for bidirectional attenuation. If the results do not meet the required specifications, you may need to troubleshoot the cable assembly or perform additional tests to identify the problem.
+
+
+
+=== Installations or Cable Assemblies with Different Types of Connections
+
+The three cord reference method is a test procedure that is used to evaluate the performance of a cable assembly. It is often used to test the quality of twisted pair cables, such as Ethernet cables, and can be used to identify problems with the cable assembly, such as cross-talk or noise.
+
+To perform the three cord reference method test, you will need three cords: a reference cord, a test cord, and a third cord that is used to connect the reference cord and the test cord. The reference cord is a known good cable that is used as a standard for comparison. The test cord is the cable assembly that you want to test.
+
+To perform the test, you will need to connect the reference cord and the test cord to the test equipment, and then use the third cord to connect the two cords together. The test equipment will then transmit a signal through the reference cord and measure the signal as it passes through the test cord. By comparing the signal that is transmitted through the reference cord to the signal that is transmitted through the test cord, you can determine the quality of the test cord and identify any problems with the cable assembly.
+
+The three cord reference method is just one of many test procedures that can be used to evaluate the performance of a cable assembly. The specific procedure that is used will depend on the specific requirements of the cable assembly and the test equipment that is available.
+
+[NOTE]
+This method attempts to exclude the loss of the connections to the cable under test and involves three test jumpers of which one is a substitution cord. Test standards: TIA-526-14B (Annex B, three-cord reference method), TIA-568.C.0 (for channel testing), and IEC 14763-3.
+
+
