@@ -1,0 +1,53 @@
+= Visual Fault Locator Polarity Test
+
+A visual fault locator, also known as a fiber optic tracer or fiber optic identifier, is a device used to identify the end of a fiber optic cable. It is used to confirm the polarity of a fiber optic connection by shining a bright light through the fiber and identifying which end of the fiber the light emerges from. The light emitted by the visual fault locator can be either a visible light, such as a red or green laser, or an infrared light that is invisible to the human eye.
+
+To use a visual fault locator to confirm polarity in telecom, you would first connect the device to the fiber optic cable you want to test. Then, you would turn on the device and shine the light through the fiber. If the light emerges from the correct end of the fiber, it indicates that the polarity of the connection is correct. If the light does not emerge from the correct end, it indicates that the polarity is incorrect and needs to be corrected.
+
+Visual fault locators are widely used in telecom and other industries to troubleshoot and test fiber optic cables and connections. They are portable, easy to use, and provide a quick 
+and reliable way to confirm the polarity of a fiber optic connection.
+
+== Purpose
+
+The purpose of confirming the polarity of a fiber optic connection using a visual fault locator is to ensure that the connection is set up correctly and that data can be transmitted over the fiber optic cable without errors.
+
+In a fiber optic connection, the transmit and receive ends of the fiber are designated as either the "A" end or the "B" end. The "A" end is used for transmitting data, while the "B" end is used for receiving data. It is important to confirm that the "A" end is connected to the transmit end of the fiber optic connection and the "B" end is connected to the receive end, as transmitting data from the wrong end can cause errors in data transmission.
+
+A visual fault locator is a device that is used to identify the end of a fiber optic cable. It works by shining a bright light through the fiber and identifying which end of the fiber the light emerges from. By using a visual fault locator to confirm the polarity of a fiber optic connection, you can ensure that the "A" end is connected to the transmit end and the "B" end is connected to the receive end, ensuring that data can be transmitted over the fiber without errors.
+
+== Requirements
+
+
+Here are the requirements for confirming the polarity of a fiber optic connection using a visual fault locator:
+
+. A visual fault locator: This is the device that is used to identify the end of a fiber optic cable and confirm the polarity of the connection. Visual fault locators are widely available and can be purchased from telecom equipment suppliers or online.
+
+. A fiber optic cable: This is the cable that you want to test to confirm the polarity of the connection. The visual fault locator is connected to one end of the cable, while the other end is connected to the transmit and receive equipment.
+
+. Transmit and receive equipment: This is the equipment that is used to transmit and receive data over the fiber optic cable. The equipment should be properly configured and connected to the fiber optic cable before testing the polarity of the connection.
+
+. A portable device: This is a device, such as a smartphone or tablet, that can be used to display the results of the visual fault locator test. The device should be able to connect to the visual fault locator and display the results of the test.
+
+. Optional: A fiber optic polarity reversing tool: This is a tool that is used to switch the transmit and receive ends of the fiber optic cable, so that the light is transmitted from the correct end. This tool is only needed if the polarity of the connection is found to be incorrect during the test.
+
+
+== Procedure
+
+
+This is how you confirm the polarity of a fiber optic connection using a visual fault locator:
+
+. Connect the visual fault locator to the fiber optic cable you want to test. The device has two ends, one for transmitting the light and one for receiving it. Connect the transmitting end to the fiber optic cable and the receiving end to a portable device, such as a smartphone or tablet, that can display the results.
+
+. Turn on the visual fault locator and shine the light through the fiber. The light emitted by the device can be either a visible light, such as a red or green laser, or an infrared light that is invisible to the human eye.
+
+. Observe which end of the fiber the light emerges from. If the light emerges from the correct end, it indicates that the polarity of the connection is correct. If the light does not emerge from the correct end, it indicates that the polarity is incorrect and needs to be corrected.
+
+. If the polarity is incorrect, you can use a fiber optic polarity reversing tool to reverse the polarity of the connection. This tool is used to switch the transmit and receive ends of the fiber optic cable, so that the light is transmitted from the correct end.
+
+. After reversing the polarity, test the connection again using the visual fault locator to confirm that the polarity is now correct.
+
+. Repeat these steps as needed until the polarity of the connection is confirmed to be correct.
+
+
+[IMPORTANT]
+It's important to note that it is essential to confirm the polarity of a fiber optic connection before transmitting data over the fiber. Incorrect polarity can cause errors in data transmission and result in poor performance of the fiber optic network. Using a visual fault locator is a quick and reliable way to confirm the polarity of a fiber optic connection, helping to ensure the smooth operation of a telecom network.

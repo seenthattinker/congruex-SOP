@@ -1,0 +1,61 @@
+= Launch Conditions Test Using Madrel Wrap
+
+TIA-455-78B is a standard developed by the Telecommunications Industry Association (TIA) that specifies the launch conditions for testing single-mode fiber optic cables using an external mandrel wrap method.
+
+The external mandrel wrap method involves wrapping the fiber optic cable around a mandrel, or cylindrical rod, of a specific diameter and then measuring the cable's attenuation, or loss, at various wavelengths. The launch conditions specified in TIA-455-78B include the diameter of the mandrel and the tension that should be applied to the fiber when wrapping it around the mandrel.
+
+The launch conditions specified in TIA-455-78B are designed to ensure that the fiber optic cable is tested under consistent and controlled conditions, allowing for accurate and reliable results. These conditions are important in telecom, as they help to ensure that fiber optic cables are capable of transmitting data accurately and reliably, and that any issues with the fiber can be identified and addressed.
+
+== Purpose
+
+The purpose of a launch conditions test using a mandrel wrap is to evaluate the performance of a single-mode fiber optic cable under controlled conditions. The test involves wrapping the fiber optic cable around a mandrel, or cylindrical rod, of a specific diameter and measuring the cable's attenuation, or loss, at various wavelengths.
+
+The launch conditions test is typically conducted as part of the manufacturing process for fiber optic cables to ensure that the cables meet the necessary specifications for data transmission. It is also used to test the performance of fiber optic cables in telecom and other industries to ensure that they are capable of transmitting data accurately and reliably.
+
+The test is important because it helps to identify any issues with the fiber optic cable that could affect its performance. By regularly conducting launch conditions tests, telecom companies and other organizations can ensure that their fiber optic cables are operating at their best and are able to transmit data without errors.
+
+== Requirements
+
+
+Here are the requirements for a launch conditions test using a mandrel wrap following the TIA-455-78B standard:
+
+. A fiber optic cable: This is the cable that is being tested. The cable should be a single-mode fiber optic cable and should be in good condition, with no visible defects or damage.
+
+. A mandrel: This is a cylindrical rod that is used to wrap the fiber optic cable around during the test. The mandrel should be of a specific diameter as specified in the TIA-455-78B standard.
+
+. A mandrel wrap fixture: This is a device that is used to hold the mandrel and the fiber optic cable in place during the test. The fixture should be able to apply a consistent and controlled amount of tension to the fiber as it is wrapped around the mandrel.
+
+. A light source and power meter: These are the devices that are used to measure the attenuation, or loss, of light through the fiber optic cable during the test. The light source should be capable of emitting light at various wavelengths, while the power meter should be able to accurately measure the power of the light transmitted through the fiber.
+
+. A computer or other device: This is a device that is used to record and analyze the test results. The device should be able to connect to the light source and power meter and should have software that can process and display the test data.
+
+. Optional: A polarization-maintaining fiber holder: This is a device that is used to hold a polarization-maintaining fiber during the test. It is only needed if the fiber optic cable being tested is a polarization-maintaining fiber.
+
+. These are the basic requirements for conducting a launch conditions test using a mandrel wrap following the TIA-455-78B standard. Additional equipment or tools may be needed depending on the specific requirements of the test.
+
+== Procedure
+
+Here is a step-by-step procedure for conducting a launch conditions test using a mandrel wrap following the TIA-455-78B standard:
+
+. Gather the necessary equipment and materials. You will need a fiber optic cable, a mandrel, a mandrel wrap fixture, a light source and power meter, a computer or other device, and optionally a polarization-maintaining fiber holder.
+
+. Install the fiber optic cable in the mandrel wrap fixture. The fiber should be placed in the fixture so that it can be wrapped around the mandrel without any kinks or bends.
+
+. Select the appropriate wavelength for the test. The TIA-455-78B standard specifies the wavelengths that should be used for the test. Choose a wavelength from the specified range and set the light source to emit light at that wavelength.
+
+. Set the power level of the light source. The TIA-455-78B standard specifies the power level that should be used for the test. Set the power of the light source to the specified level.
+
+. Set the tension on the fiber. The TIA-455-78B standard specifies the tension that should be applied to the fiber as it is wrapped around the mandrel. Adjust the tension on the fiber so that it meets the specified level.
+
+. Wrap the fiber around the mandrel. Carefully wrap the fiber around the mandrel, taking care to maintain the specified tension and avoid kinks or bends in the fiber.
+
+. Measure the attenuation of the fiber. Using the power meter, measure the power of the light transmitted through the fiber at various points along the length of the fiber. Record the measurements and use them to calculate the attenuation of the fiber at the specified wavelength.
+
+. Repeat the test at multiple wavelengths. The TIA-455-78B standard specifies multiple wavelengths that should be tested. Repeat the test at each of the specified wavelengths and record the results.
+
+. Analyze the test results. Use the computer or other device to analyze the test data and determine if the fiber optic cable meets the specifications for attenuation set by the TIA-455-78B standard.
+
+This is the general procedure for conducting a launch conditions test using a mandrel wrap following the TIA-455-78B standard. It is important to carefully follow the steps and procedures specified in the standard to ensure that the test is conducted accurately and reliably.
+
+
+
