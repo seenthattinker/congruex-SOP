@@ -37,7 +37,7 @@ In addition to verifying the performance of a cord, the OCRTM can also be used t
 
 he requirements for the One-Cord Reference Test Method (OCRTM) in telecom will depend on the specific standards and regulations that apply to the cords being tested. In general, however, there are a few common requirements that are typically applied to OCRTM tests:
 
-. The cord being tested should be installed in its intended environment (e.g., in a conduit, on a pole, etc.). This helps to ensure that the test results are representative of the cord's actual performance.
+. The cord being tested should be installed in its intended environment (for example, in a conduit, on a pole, and the like,). This helps to ensure that the test results are representative of the cord's actual performance.
 
 . The cord should be terminated with the appropriate connectors and fittings. This may include connectors such as RJ45 jacks or plugs, as well as any necessary adapters or couplers.
 
@@ -58,7 +58,7 @@ Here is a general procedure for performing a One-Cord Reference Test Method (OCR
 .. Twisted-pair copper wire (cord) to be tested
 .. Appropriate connectors and fittings for the cord
 .. Calibration equipment (if necessary)
-. Install the cord in its intended environment (e.g., in a conduit, on a pole, etc.).
+. Install the cord in its intended environment (for example, in a conduit, on a pole, and the like,).
 
 . Terminate the cord with the appropriate connectors and fittings.
 
@@ -72,7 +72,7 @@ Here is a general procedure for performing a One-Cord Reference Test Method (OCR
 
 . Measure the response at the other end of the cord using the test equipment.
 
-. Compare the transmitted signal to the received signal to determine the cord's performance characteristics (e.g., attenuation, crosstalk, return loss).
+. Compare the transmitted signal to the received signal to determine the cord's performance characteristics (for example, attenuation, crosstalk, return loss).
 
 . Record the test results.
 

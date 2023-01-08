@@ -12,7 +12,7 @@ and it must be understood there could be a difference between fiber length and c
 
 [quote,TIA-568-C.0: Generic Telecommunications Cabling for Customer Premises]
 
-The optical lengths of certain cables (e.g., stranded loose tube) may be longer than the cable sheath due to the fiber lay within the cable sheath.
+The optical lengths of certain cables (for example, stranded loose tube) may be longer than the cable sheath due to the fiber lay within the cable sheath.
 
 
 

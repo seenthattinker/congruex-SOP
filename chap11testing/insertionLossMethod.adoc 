@@ -20,7 +20,7 @@ In addition to verifying the performance of connectors, the Insertion Loss Metho
 
 The requirements for the Insertion Loss Method test in telecom will depend on the specific standards and regulations that apply to the connectors being tested. In general, however, there are a few common requirements that are typically applied to Insertion Loss Method tests:
 
-. The connectors being tested should be installed in their intended environment (e.g., in a conduit, on a pole, etc.). This helps to ensure that the test results are representative of the connectors' actual performance.
+. The connectors being tested should be installed in their intended environment (for example, in a conduit, on a pole, and the like,). This helps to ensure that the test results are representative of the connectors' actual performance.
 
 . The connectors should be terminated with the appropriate fittings. This may include adapters or couplers, as well as any necessary tools or equipment.
 
@@ -41,13 +41,15 @@ Here is a general procedure for performing the Insertion Loss Method test in tel
 .. Connectorized cable to be tested
 .. Appropriate connectors and fittings for the cable
 .. Calibration equipment (if necessary)
-. Install the cable in its intended environment (e.g., in a conduit, on a pole, etc.).
+. Install the cable in its intended environment (for example, in a conduit, on a pole, Set the power meter to the correct wavelength; record the power level (in dBm) and zero the meter to display dB on the OPM.).
 
 . Terminate the cable with the appropriate connectors and fittings.
 
 . Set up the Insertion Loss Method test equipment according to the manufacturer's instructions.
+..  Turn on the optical light source and allow it to stabilize.
+.. Clean the optical connectors.
 
-. Calibrate the test equipment (if necessary).
+. Set the power meter to the correct wavelength; record the power level (in dBm) and zero the meter to display dB on the OPM.
 
 . Connect the test equipment to one end of the cable.
 
@@ -67,4 +69,4 @@ Here is a general procedure for performing the Insertion Loss Method test in tel
 
 . Disconnect the test equipment from the cable.
 
-. Repeat the test
+. Repeat the test from the other direction.

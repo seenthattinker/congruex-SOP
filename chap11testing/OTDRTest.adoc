@@ -70,7 +70,7 @@ To perform an OTDR auto test, you will need to follow these steps:
 
 . Navigate to the OTDR auto test menu on the OTDR's display. This option may be located in the main menu or in a submenu.
 
-. Follow the prompts on the display to initiate the OTDR auto test. This may involve selecting the type of test that you want to perform (e.g., loss, reflectance, dispersion), as well as any other relevant parameters.
+. Follow the prompts on the display to initiate the OTDR auto test. This may involve selecting the type of test that you want to perform (for example, loss, reflectance, dispersion), as well as any other relevant parameters.
 
 . Wait for the OTDR to complete the test. This may take a few minutes, depending on the length and complexity of the fiber optic link.
 
@@ -84,7 +84,7 @@ There are a few limitations and shortcomings to consider when using an OTDR auto
 
 . Limited accuracy: OTDR auto tests are generally accurate, but they may not be as precise as manually taking measurements with an OTDR. This can be especially true for measurements of very small losses or reflectances.
 
-. False positives: OTDR auto tests may sometimes identify problems that do not actually exist. This can happen when the OTDR interprets a normal feature of the fiber optic link (e.g., a splice or connector) as a problem.
+. False positives: OTDR auto tests may sometimes identify problems that do not actually exist. This can happen when the OTDR interprets a normal feature of the fiber optic link (for example, a splice or connector) as a problem.
 
 . Limited testing range: OTDR auto tests are generally only able to test a single span of fiber at a time. If you need to test a longer link that consists of multiple spans, you may need to perform multiple OTDR auto tests or use a different testing method.
 
@@ -114,7 +114,7 @@ To calibrate an Optical Time-Domain Reflectometer (OTDR), you will need to follo
 
 . Navigate to the calibration menu on the OTDR's display. This option may be located in the main menu or in a submenu.
 
-. Follow the prompts on the display to initiate the calibration process. This may involve selecting the type of calibration that you want to perform (e.g., loss, reflectance, dispersion), as well as any other relevant parameters.
+. Follow the prompts on the display to initiate the calibration process. This may involve selecting the type of calibration that you want to perform (for example, loss, reflectance, dispersion), as well as any other relevant parameters.
 
 . Wait for the OTDR to complete the calibration. This may take a few minutes, depending on the complexity of the calibration process.
 
