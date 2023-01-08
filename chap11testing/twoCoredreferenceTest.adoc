@@ -1,0 +1,83 @@
+= Two-cord Reference Test Method
+
+This test method is preferred by contractors who are responsible for the installation of the optical cable and the
+termination of the fibers normally between two patch panels. It is also used by manufacturers of cable
+assemblies to measure the attenuation of cable assemblies using like terminations.
+The test, specified by the TIA-526-14B (Annex C), measures the loss of the installed cable span, including the
+loss of the plugs terminated by the installer that are normally mated into patch panels. It requires that two test
+jumpers be referenced together and have their loss zeroed out by the OPM, so that any loss added between the
+two test jumpers is measured. This technique does not include the loss of any patch cords that are added later
+to terminate between the transmission equipment and the fiber span.
+During the reference testing using two jumpers, one complete connection (two plugs and one adaptor) are
+zeroed or removed from the test to be performed. As the test will occur between two patch panels terminated
+with a plug at each end and one additional adaptor, the attenuat
+
+[NOTE]
+If the test is to be performed on multimode fiber using an overfilled launch (OFL) condition, a
+mandrel would be used on TJ1. For encircled flux (EF) testing where the light source has an
+internal restricted launch the mandrel is not required.
+
+== Purpose 
+
+The Two-Cord Reference Test (TCRT) is a testing method used in the telecommunications industry to verify the performance of two twisted-pair copper wires (also known as cords). This method is typically used to test the transmission characteristics of the cords, such as their attenuation, crosstalk, and return loss.
+
+The TCRT is similar to the One-Cord Reference Test Method (OCRTM), but it involves testing two cords at the same time. This allows the test equipment to compare the performance of the two cords and determine how they interact with each other.
+
+The purpose of the TCRT is to ensure that the cords are functioning properly and meet industry standards. This is important because the performance of cords can have a significant impact on the overall performance of a telecom system. By testing the performance of cords using the TCRT, telecom companies can ensure that their systems are functioning as intended and meeting the required standards.
+
+In addition to verifying the performance of cords, the TCRT can also be used to troubleshoot problems in a telecom system. By performing TCRT tests on different cords within the system, technicians can identify any cords that are not performing up to standard and take corrective action. This can help to ensure the overall reliability and performance of the telecom system.
+
+== Requirements
+
+The requirements for the Two-Cord Reference Test (TCRT) in telecom will depend on the specific standards and regulations that apply to the cords being tested. In general, however, there are a few common requirements that are typically applied to TCRT tests:
+
+. The cords being tested should be installed in their intended environment (e.g., in a conduit, on a pole, etc.). This helps to ensure that the test results are representative of the cords' actual performance.
+
+. The cords should be terminated with the appropriate connectors and fittings. This may include connectors such as RJ45 jacks or plugs, as well as any necessary adapters or couplers.
+
+. The cords should be tested in both directions (i.e., from one end to the other and vice versa). This helps to ensure that the cords are functioning properly in both directions.
+
+. The test equipment should be calibrated and properly maintained. This helps to ensure that the test results are accurate and reliable.
+
+. The test should be performed by a trained and qualified technician. This helps to ensure that the test is performed correctly and that the results are properly interpreted.
+
+It's worth noting that these are just a few of the requirements that may be applicable to TCRT tests. The specific requirements will depend on the standards and regulations that apply to the cords being tested, as well as the specific requirements of the telecom company or organization conducting the test.
+
+== Procedure
+
+Here is a general procedure for performing a Two-Cord Reference Test (TCRT) in telecom:
+
+. Gather the necessary equipment and materials:
+.. TCRT test equipment
+.. Two twisted-pair copper wires (cords) to be tested
+.. Appropriate connectors and fittings for the cords
+.. Calibration equipment (if necessary)
+. Install the cords in their intended environment (e.g., in a conduit, on a pole, etc.).
+
+. Terminate the cords with the appropriate connectors and fittings.
+
+. Set up the TCRT test equipment according to the manufacturer's instructions.
+
+. Calibrate the test equipment (if necessary).
+
+. Connect the test equipment to one end of each cord.
+
+. Transmit a signal over the cords using the test equipment.
+
+. Measure the response at the other end of the cords using the test equipment.
+
+. Compare the transmitted signal to the received signal to determine the cords' performance characteristics (e.g., attenuation, crosstalk, return loss).
+
+. Record the test results.
+
+. Disconnect the test equipment from the cords.
+
+. Repeat the test in the opposite direction (i.e., from the other end of the cords to the first end).
+
+. Compare the results of the two tests to ensure that the cords are functioning properly in both directions.
+
+. If the cords do not meet the required performance standards, identify the cause of the problem and take corrective action as needed.
+
+. If the cords meet the required performance standards, document the test results and file them for future reference.
+
+It's worth noting that this is just a general procedure for performing a TCRT test. The specific steps may vary depending on the equipment and standards being used. It is important to follow the manufacturer's instructions for the test equipment and the applicable industry standards when performing the test.

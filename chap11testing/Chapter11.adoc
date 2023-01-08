@@ -41,7 +41,7 @@ In annex E of the TIA-568-C.0 standard, information is provided to ensure that i
 
 The tier 2 OTDR testing does not replace the tier 1 testing but is used for supplementary evaluation of the installed fiber optic cable link.
 
-`Cabling Subsystem 1 Link Segment`: This requirement in the TIA-568 standard applies between the equipment out (or MUTOA) to the horizontal cross-connect (HC) patch panel and requires that segments at a minimum need to be tested in one direction at one wavelength. Thi s would be either 850 nm or 1300 nm for multimode fibers. For single-mode fibers, it would be at either 1310 nm or 1550 nm.
+`Cabling Subsystem 1 Link Segment`: This requirement in the TIA-568 standard applies between the equipment out (or MUTOA) to the horizontal cross-connect (HC) patch panel and requires that segments at a minimum need to be tested in one direction at one wavelength. This would be either 850 nm or 1300 nm for multimode fibers. For single-mode fibers, it would be at either 1310 nm or 1550 nm.
 
 `Cabling Subsystem 2 and Cabling Subsystem 3 Link Segments`: Subsystem 2 applies to the segment between the HC patch panel and the intermediate cross-connect (IC) patch panel. Subsystem 3 adds the link from the IC to the main cross-connect (MC). Testing both subsystem 2 and 3 link segments can occur from the HC to the MC and, at a minimum, need to be tested in one direction at two wavelengths. This would be
 850 nm and 1300 nm for multimode fi bers, and at 1310 nm and 1550 nm for single-mode fibers.

@@ -1,0 +1,89 @@
+= One-cord Reference Test
+
+The One-Cord Reference Test Method (OCRTM) is a testing method used in the telecommunications industry to verify the performance of a single twisted-pair copper wire (also known as a "cord"). This method is typically used to test the transmission characteristics of the cord, such as its attenuation, crosstalk, and return loss.
+
+This test, performed by end users, determines the losses of both the connections normally located at patch
+panels at each end of the cable link to be tested. Specified by the TIA-526-14B (Annex A), the test is called a
+one-cord reference because only one of the two test jumpers is used for the reference. The performance of the
+test jumpers should be confirmed prior to link or span testing. Industry best practices recommend that specific
+test reference cords are used for the test jumpers. These cords are built with tighter tolerances and assure
+more accurate and repeatable test results.
+
+
+In the following diagram you can see that two test jumpers (TJ1 and TJ2) are used at each end of the link to be
+tested. After confirming that the test jumpers are clean and meet the attenuation level required, TJ1 is
+connected to the patch panel adapter from the OLS. TJ2 is linked between the patch panel adapter and the
+OPM.
+
+[NOTE]
+If the test is to be performed using an overfilled launch (OFL) condition, a mandrel would be
+used on TJ1. For encircled flux (EF) testing where the light source has an internal restricted
+launch the mandrel is not required, but the appropriate test reference cord must be used with
+the EF compliant source.
+
+The one-cord reference test method is recommended for multimode link testing, providing the most accurate
+and repeatable results. It is preferred for both multimode and single-mode testing, as specified in the TIA-568-
+C.0 standard.
+
+== Purpose
+
+The purpose of the One-Cord Reference Test Method (OCRTM) in telecom is to verify the performance of a single twisted-pair copper wire (also known as a "cord"). This method is typically used to test the transmission characteristics of the cord, such as its attenuation, crosstalk, and return loss.
+
+By testing the performance of a cord using the OCRTM, telecom companies can ensure that the cord is functioning properly and meets industry standards. This is important because the performance of a cord can have a significant impact on the overall performance of a telecom system. For example, if a cord has high levels of attenuation or crosstalk, it may limit the transmission of data or cause interference with other signals.
+
+In addition to verifying the performance of a cord, the OCRTM can also be used to troubleshoot problems in a telecom system. By performing OCRTM tests on different cords within the system, technicians can identify any cords that are not performing up to standard and take corrective action. This can help to ensure the overall reliability and performance of the telecom system.
+
+== Requirements
+
+he requirements for the One-Cord Reference Test Method (OCRTM) in telecom will depend on the specific standards and regulations that apply to the cords being tested. In general, however, there are a few common requirements that are typically applied to OCRTM tests:
+
+. The cord being tested should be installed in its intended environment (e.g., in a conduit, on a pole, etc.). This helps to ensure that the test results are representative of the cord's actual performance.
+
+. The cord should be terminated with the appropriate connectors and fittings. This may include connectors such as RJ45 jacks or plugs, as well as any necessary adapters or couplers.
+
+. The cord should be tested in both directions (i.e., from one end to the other and vice versa). This helps to ensure that the cord is functioning properly in both directions.
+
+. The test equipment should be calibrated and properly maintained. This helps to ensure that the test results are accurate and reliable.
+
+. The test should be performed by a trained and qualified technician. This helps to ensure that the test is performed correctly and that the results are properly interpreted.
+
+It's worth noting that these are just a few of the requirements that may be applicable to OCRTM tests. The specific requirements will depend on the standards and regulations that apply to the cords being tested, as well as the specific requirements of the telecom company or organization conducting the test.
+
+== Procedure
+
+Here is a general procedure for performing a One-Cord Reference Test Method (OCRTM) in telecom:
+
+. Gather the necessary equipment and materials:
+.. OCRTM test equipment
+.. Twisted-pair copper wire (cord) to be tested
+.. Appropriate connectors and fittings for the cord
+.. Calibration equipment (if necessary)
+. Install the cord in its intended environment (e.g., in a conduit, on a pole, etc.).
+
+. Terminate the cord with the appropriate connectors and fittings.
+
+. Set up the OCRTM test equipment according to the manufacturer's instructions.
+
+. Calibrate the test equipment (if necessary).
+
+. Connect the test equipment to one end of the cord.
+
+. Transmit a signal over the cord using the test equipment.
+
+. Measure the response at the other end of the cord using the test equipment.
+
+. Compare the transmitted signal to the received signal to determine the cord's performance characteristics (e.g., attenuation, crosstalk, return loss).
+
+. Record the test results.
+
+. Disconnect the test equipment from the cord.
+
+. Repeat the test in the opposite direction (i.e., from the other end of the cord to the first end).
+
+. Compare the results of the two tests to ensure that the cord is functioning properly in both directions.
+
+. If the cord does not meet the required performance standards, identify the cause of the problem and take corrective action as needed.
+
+. If the cord meets the required performance standards, document the test results and file them for future reference.
+
+It's worth noting that this is just a general procedure for performing an OCRTM test. The specific steps may vary depending on the equipment and standards being used. It is important to follow the manufacturer's instructions for the test equipment and the applicable industry standards when performing the test.

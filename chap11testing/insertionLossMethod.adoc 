@@ -1,0 +1,70 @@
+= Insertion Loss Method 
+
+The Insertion Loss Method is a testing method used in the telecommunications industry to verify the performance of connectorized cables. This method involves measuring the loss of signal strength that occurs when a connector is inserted into a cable.
+
+To perform the Insertion Loss Method test, a signal is transmitted through the cable and the strength of the signal is measured at both ends of the cable. The connector is then inserted into the cable, and the strength of the signal is measured again. The difference between the two measurements is the insertion loss.
+
+The purpose of the Insertion Loss Method is to ensure that the connectors used in telecom systems are functioning properly and meet industry standards. This is important because the performance of connectors can have a significant impact on the overall performance of a telecom system. By testing the performance of connectors using the Insertion Loss Method, telecom companies can ensure that their systems are functioning as intended and meeting the required standards.
+
+In addition to verifying the performance of connectors, the Insertion Loss Method can also be used to troubleshoot problems in a telecom system. By performing Insertion Loss Method tests on different connectors within the system, technicians can identify any connectors that are not performing up to standard and take corrective action. This can help to ensure the overall reliability and performance of the telecom system.
+
+== Purpose 
+
+The purpose of the Insertion Loss Method test in telecom is to verify the performance of connectorized cables. This test involves measuring the loss of signal strength that occurs when a connector is inserted into a cable.
+
+The Insertion Loss Method test is typically used to ensure that the connectors used in telecom systems are functioning properly and meet industry standards. This is important because the performance of connectors can have a significant impact on the overall performance of a telecom system. By testing the performance of connectors using the Insertion Loss Method, telecom companies can ensure that their systems are functioning as intended and meeting the required standards.
+
+In addition to verifying the performance of connectors, the Insertion Loss Method test can also be used to troubleshoot problems in a telecom system. By performing Insertion Loss Method tests on different connectors within the system, technicians can identify any connectors that are not performing up to standard and take corrective action. This can help to ensure the overall reliability and performance of the telecom system.
+
+== Requirements 
+
+The requirements for the Insertion Loss Method test in telecom will depend on the specific standards and regulations that apply to the connectors being tested. In general, however, there are a few common requirements that are typically applied to Insertion Loss Method tests:
+
+. The connectors being tested should be installed in their intended environment (e.g., in a conduit, on a pole, etc.). This helps to ensure that the test results are representative of the connectors' actual performance.
+
+. The connectors should be terminated with the appropriate fittings. This may include adapters or couplers, as well as any necessary tools or equipment.
+
+. The connectors should be tested in both directions (i.e., with the signal flowing in both directions through the connector). This helps to ensure that the connectors are functioning properly in both directions.
+
+. The test equipment should be calibrated and properly maintained. This helps to ensure that the test results are accurate and reliable.
+
+. The test should be performed by a trained and qualified technician. This helps to ensure that the test is performed correctly and that the results are properly interpreted.
+
+It's worth noting that these are just a few of the requirements that may be applicable to Insertion Loss Method tests. The specific requirements will depend on the standards and regulations that apply to the connectors being tested, as well as the specific requirements of the telecom company or organization conducting the test.
+
+== Procedure
+
+Here is a general procedure for performing the Insertion Loss Method test in telecom:
+
+. Gather the necessary equipment and materials:
+.. Insertion Loss Method test equipment
+.. Connectorized cable to be tested
+.. Appropriate connectors and fittings for the cable
+.. Calibration equipment (if necessary)
+. Install the cable in its intended environment (e.g., in a conduit, on a pole, etc.).
+
+. Terminate the cable with the appropriate connectors and fittings.
+
+. Set up the Insertion Loss Method test equipment according to the manufacturer's instructions.
+
+. Calibrate the test equipment (if necessary).
+
+. Connect the test equipment to one end of the cable.
+
+. Transmit a signal over the cable using the test equipment.
+
+. Measure the strength of the signal at the other end of the cable using the test equipment.
+
+. Record the signal strength measurement.
+
+. Insert the connector into the cable.
+
+. Measure the strength of the signal at the other end of the cable using the test equipment.
+
+. Calculate the insertion loss by subtracting the second signal strength measurement from the first.
+
+. Record the insertion loss measurement.
+
+. Disconnect the test equipment from the cable.
+
+. Repeat the test
