@@ -1,0 +1,77 @@
+= Optical Fiber Transmission System Test 
+
+An optical fiber transmission system test is a procedure used to evaluate the performance of an optical fiber transmission system in telecom. This type of test is typically used to verify that the system is operating correctly and meeting specified performance standards.
+
+There are many different types of tests that can be performed on an optical fiber transmission system, including tests to measure factors such as transmission loss, signal-to-noise ratio, and bit error rate. These tests are typically performed using specialized equipment, such as optical power meters, oscilloscopes, and bit error rate testers.
+
+Optical fiber transmission systems are used to transmit data over long distances using light signals transmitted through optical fibers. These systems are commonly used in telecommunications and networking applications, and are known for their high speed, reliability, and low signal loss. Testing the performance of these systems is important to ensure that they are operating correctly and meeting the required performance standards.
+
+== Purpose
+
+
+
+The purpose of an optical fiber transmission system test in telecom is to evaluate the performance of the system and verify that it is operating correctly and meeting specified performance standards. These tests are typically used to measure factors such as transmission loss, signal-to-noise ratio, and bit error rate, and can be performed using specialized equipment such as optical power meters, oscilloscopes, and bit error rate testers.
+
+In addition to verifying the performance of the system, optical fiber transmission system tests can also be used to identify any problems or issues with the system, such as damaged fibers or faulty components. This can help to ensure the reliability and stability of the system and prevent any disruptions in service.
+
+== Requirements
+
+There are a few general requirements that must be met in order to perform an optical fiber transmission system test in telecom:
+
+. Optical fibers: An optical fiber transmission system test requires access to the optical fibers that make up the system. These fibers should be in good condition and free of any visible damage or defects.
+
+. Light source: A light source is needed to transmit the light signals through the optical fibers during the test. This could be a laser or a light-emitting diode (LED).
+
+. Optical power meter: An optical power meter is used to measure the power of the light being transmitted through the optical fibers. This device is essential for accurately measuring the transmission loss of the system.
+
+. Oscilloscope: An oscilloscope is a device that is used to measure the electrical signals being transmitted through the optical fibers. It can be used to measure the signal-to-noise ratio of the system.
+
+. Bit error rate tester: A bit error rate tester is a device that is used to measure the number of errors that occur during the transmission of data through the optical fibers. It can be used to measure the bit error rate of the system.
+
+In addition to these specific requirements, it is also important to have a well-controlled and stable test environment, as any external factors that could affect the test results should be minimized. This may include factors such as temperature, humidity, and electromagnetic interference.
+
+== procedure
+
+Here is a general procedure for performing an optical fiber transmission system test in telecom:
+
+. Gather the necessary equipment: optical fibers, light source, optical power meter, oscilloscope, and bit error rate tester.
+
+. Set up the test environment: Make sure the test area is free of any external factors that could affect the test results, such as temperature fluctuations or electromagnetic interference.
+
+. Connect the optical fibers to the light source and the optical power meter using appropriate connectors.
+
+. Turn on the light source and allow it to warm up for a few minutes.
+
+. Use the optical power meter to measure the power of the light being transmitted through the optical fibers. Record this value.
+
+. Use the oscilloscope to measure the electrical signals being transmitted through the optical fibers. Record this value.
+
+. Use the bit error rate tester to measure the number of errors that occur during the transmission of data through the optical fibers. Record this value.
+
+. Calculate the transmission loss of the system by comparing the transmitted light power value to the received light power value.
+
+. Calculate the signal-to-noise ratio of the system by comparing the strength of the electrical signals being transmitted through the optical fibers to the noise present in the system.
+
+. Calculate the bit error rate of the system by dividing the number of errors that occurred during the transmission of data by the total number of bits transmitted.
+
+. Record the results of the test and compare them to the specified performance standards.
+
+. Disconnect the optical fibers from the light source and the optical power meter, and turn off the light source.
+
+. Clean up and properly store the equipment.
+
+
+
+
+
+
+
+
+
+
+
+[NOTE]
+====
+. Air-gap attenuators should not be used for multimode fiber due to the possibility of modal noise when used in conjunction with laser transmitters.
+. All VOAs have some attenuation. This value should be calculated into the final measurement.
+====

@@ -345,99 +345,8 @@ x *0.1 dB*|*With*  +
 
 
 
-== Testing Receiver Input Power
 
-image::media/ReceiverInputPower.png[]
-
-. Disconnect the system cable or patchcord from the receiver.
-. Always clean the optical connector endfaces.
-. Connect the optical cable to the power meter.
-. Set the optical power meter to the correct wavelength.
-. Turn on the transmitter.
-. Record the optical power (dBm).
-. Refer to the outside plant acceptance or maintenance report for comparison.
-. Refer to the system manual to confirm that the power level is above minimum acceptable receiver power and below maximum receiver power level.
-. If the power level is too high and oversaturates the photodiode, a fixed attenuator may be required at the receiver.
-
-== Optical Fiber Transmission System
-
-. With the system in its installed and final configuration, attach a bit error generator to the transmitter and a bit error rate (BER) test set to the receiver. Insert a variable optical attenuator (VOA) in front of the receiver with the attenuation set to 0.0 dB and turn
-the system on. 
-. Verify that the system is running error free by inserting errors at the transmitter and verifying the receipt of the errors at the
-receiver.
-. Slowly add attenuation into the system with the VOA while watching the BER test set. When the bit error rate reaches an unacceptable level (degraded service and out of service), read the amount of attenuation (dB) or power level (dBm) that had to be added.
-. This amount of attenuation is the system margin. This is the amount of attenuation that the system can absorb before it fails.
-
-[NOTE]
-====
-. Air-gap attenuators should not be used for multimode fiber due to the possibility of modal noise when used in conjunction with laser transmitters.
-. All VOAs have some attenuation. This value should be calculated into the final measurement.
-====
-
-image::media/VariableOpticalAttenuatorPowerMeter.png[]
-
-
-== Transmitter and Receiver Documentation
-
-image::media/ReceiverDocument.png[]
-
-This form allows for pre- (planned) or post- (unplanned) acceptance testing or performance testing of transmission systems. For acceptance testing, the transmitter and receiver are linked using two optical jumpers that match the fiber type and connectors used in the system. In both acceptance testing and hot testing of transmission equipment, a performance test set is required to test signal quality. BERT or datacom
-analyzers are two types of equipment used to test signal quality.
-
-`Step 1.` Measure the output power (dBm) using a power meter calibrated to the correct wavelength. Record in column B. Compare to manufacturer’s specifications.
-
-`Step 2.` Disconnect the jumper from the receiver and measure the received power (dBm). Document and list in column C.
-
-`Step 3.` Insert a variable optical attenuator (VOA) with known excess loss (when measuring 0 dB) between the transmitter and receiver (or between the receiver and patch panel. Make sure that the fiber jumpers and the calibration wavelength of the VOA match the system. Increase the signal loss with the VOA until the system’s performance degrades below the minimum acceptable level.
-
-`Step 4.` Disconnect the jumper from the receiver port and measure the received power (dBm) using the optical power meter. Record this measurement into column D.
-
-[NOTE]
-The difference between power levels in column B (dBm) and C (dBm) equals the loss in dB (column E). This is the existing loss. The difference between columns B and D is the maximum allowed loss without signal or performance degradation.
-
-== OTDR Deadzone
-
-The deadzone is the area in which an OTDR cannot make measurements. It is limited by the pulse width
-of the laser, the reflection of the front-panel connection and the bandwidth of the receiver (detector). The deadzone cannot be shorter than the sampling distance programmed into the instrument. OTDRs constantly compromise between dynamic range and deadzone. When one improves, the other degrades. Techniques such as optical masking are an exception to this rule. Considerations when selecting an OTDR for close measurements include the type of measurement being made, the strength of the reflection, and the OTDR’s bandwidth. There are two types of deadzone:
-
-`Event deadzone` - Sometimes called two-point spatial resolution, it is the minimum distance after a reflection in which an OTDR can accurately measure the distance to a second event. Because this measurement is determined from the leading edge of the reflection and the 3 dB drop from the top of the reflection, this number is not to be used for determining two-point loss.
-
-`Deadzone loss` - This is the minimum distance after a reflective event before an OTDR can accurately measure a nonreflective event.
-
-=== Masking
-
-Optical masking uses a fast optical switch (electro-optic or acousto-optic) in the return leg of the OTDR (between the coupler and the receiver) to mask the intense Fresnel reflection. The application is when two events, the first of which is reflective, have a tail from the amplifier’s response covering a nonreflective splice. The operator would place one marker (cursor) at the front edge and the other at the rear edge (peak) of the reflective event. This would eliminate the tail, allowing for closer measurements of the second nonreflective
-event. The deadzone is still limited by the pulse width, but it is much shorter without the tail.
-
-=== Measuring Reflectance with a Deadzone Box
-
-Testing for front-panel attenuation, reflectance, and the span’s optical return loss (ORL) requires a deadzone box with a connector and polish that match the connector under test. The far-end connector’s reflectance is tested using an optical terminator with matching polish and connector type, or a second deadzone box.
-
-.Measure Reflectance
-image::media/MeasureReflectance.png[align="center"]
-
-== OTDR Signatures
-
-image::media/ODTRnonreflective22.png[align='center']
-
-=== Nonreflective
-
-* Fusion splices
-* Fused biconical tapered splitters
-* Macro and microbends
-
-This signature is caused by a nonreflective loss of signal. The three common causes are the fusion splice, where the two fibers are melted together causing a low loss in signal or the macrobend and microbend, where the fibers are bent or pinched, causing light to escape from the
-fiber. The B marker is the correct location of the cursor placement.
-
-=== Reflective
-
-* Connectors
-* Mechanical splices
-* End of fiber span
-
-The reflective spike is caused by any surface that returns a reflection to the OTDR. Reflective signatures are caused by connectors, mechanical splices, and fiber ends and are called Fresnel reflections.
-
-image::media/ODTRdouble.png[align="center"]
+== Measurement and Result Considerations
 
 == Gainers on OTDR Traces
 
@@ -460,7 +369,19 @@ for confirmation.
 .Nonreflective Loss
 image::media/NoneReflectiveLoss.png[align="center"]
 
-=== Causes of Fiber Roll-off
+== Fiber Roll-off
+
+Fiber roll-off in telecom refers to the phenomenon where the transmission loss of an optical fiber increases at wavelengths outside of the fiber's normal operating range. This can be caused by several factors, including:
+
+. Dispersion: Dispersion is the phenomenon where the speed of light changes as it travels through an optical fiber. This can cause the different wavelengths of light in the fiber to travel at different speeds, leading to fiber roll-off.
+
+. Absorption: Absorption is the process by which light is absorbed by the material of the optical fiber. Absorption is typically higher at longer wavelengths, which can cause fiber roll-off.
+
+. Scattering: Scattering is the process by which light is scattered by impurities or imperfections in the material of the optical fiber. This can cause the light to be absorbed or reflected, leading to fiber roll-off.
+
+. Polarization mode dispersion: Polarization mode dispersion is a phenomenon where the different polarizations of light travel at different speeds through the optical fiber, leading to fiber roll-off.
+
+Understanding and mitigating fiber roll-off is important in telecom, as it can affect the performance and reliability of optical fiber transmission systems.
 
 * Breaks (fractured fiber).
 * Extreme macrobend.
@@ -471,13 +392,6 @@ When testing a suspected break with the OTDR, it is important to confirm that th
 
 The second advantage of this technique is that once a Fresnel reflection is located, it is easier to accurately place the OTDR’s distance cursor at the actual location of the break. Whenever possible, the OTDR operator should use the last splice location (closest to the fault) in the span to measure the distance to the fault. This will be more accurate than if done from the longer distance to the test equipment location, due to the differences in the fiber length versus the cable length in cable structures.
 
-== Testing Fiber Optic Splitters
-
-image::media/OpticSplitters2.png[float="right"]
-
-Fiber optic splitters (couplers) allow for cost savings in many networks. Testing spans with splitters requires power levels and loss measurements from each transmitter to each shared receiver. If testing transmit and receive FTTx power levels, the optical power meter must perform in-line handshaking for upstream measurements.
-
-image::media/OpticSplitters3.png[align="center"]
 
 === Testing Through Optical Splitters
 

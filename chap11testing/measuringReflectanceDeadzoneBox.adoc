@@ -1,0 +1,70 @@
+= Measuring Reflectance with a Deadzone Box
+
+In telecommunications, a deadzone box is a device that is used to measure the reflectance of a transmission line. Reflectance is a measure of the amount of energy that is reflected back to the source when a signal is transmitted down a transmission line. The deadzone box is used to isolate the transmission line from the rest of the system so that the reflectance measurement can be made accurately. The deadzone box typically consists of a small enclosure with connectors on either end that allow it to be connected to the transmission line. The reflectance measurement is made by transmitting a signal down the transmission line and measuring the amount of energy that is reflected back to the source. This measurement can be used to determine the quality of the transmission line and identify any problems that may be present.
+
+
+
+=== OTDR Deadzone
+
+The deadzone is the area in which an OTDR cannot make measurements. It is limited by the pulse width
+of the laser, the reflection of the front-panel connection and the bandwidth of the receiver (detector). The deadzone cannot be shorter than the sampling distance programmed into the instrument. OTDRs constantly compromise between dynamic range and deadzone. When one improves, the other degrades. Techniques such as optical masking are an exception to this rule. Considerations when selecting an OTDR for close measurements include the type of measurement being made, the strength of the reflection, and the OTDR’s bandwidth. There are two types of deadzone:
+
+`Event deadzone` - Sometimes called two-point spatial resolution, it is the minimum distance after a reflection in which an OTDR can accurately measure the distance to a second event. Because this measurement is determined from the leading edge of the reflection and the 3 dB drop from the top of the reflection, this number is not to be used for determining two-point loss.
+
+`Deadzone loss` - This is the minimum distance after a reflective event before an OTDR can accurately measure a nonreflective event.
+
+
+=== Optical Masking
+
+In telecom, optical masking refers to a technique used to protect sensitive optical components from damage or degradation due to exposure to high levels of light. Optical masking involves the use of a mask, which is a device that blocks or absorbs unwanted light, to protect the sensitive components from excessive exposure to light. This can be especially important in telecommunications systems, where the transmission of high-power signals can generate strong optical fields that can damage or degrade sensitive components.
+
+Optical masking is often used to protect components such as detectors, amplifiers, and other optical devices that are sensitive to light and can be damaged by high levels of light exposure. It can also be used to protect fibers and other optical components from damage caused by lasers or other high-power light sources.
+
+There are a variety of different types of optical masks that can be used for this purpose, including neutral density filters, polarization filters, and absorption filters. The type of mask used will depend on the specific requirements of the application and the characteristics of the light being transmitted
+
+== Purpose 
+
+
+The purpose of measuring reflectance with a deadzone box in telecommunications is to determine the quality of the transmission line and identify any problems that may be present. Reflectance is a measure of the amount of energy that is reflected back to the source when a signal is transmitted down a transmission line. A high reflectance measurement can indicate that there is a problem with the transmission line, such as a break or a fault, that is causing the signal to be reflected back to the source. By measuring the reflectance of a transmission line, it is possible to identify and locate problems that may be affecting the performance of the line. This can help to ensure that the transmission line is operating at its optimal level and help to prevent disruptions in service.
+
+
+
+
+== Requirements
+
+
+To make a reflectance measurement using a deadzone box, you will need the following:
+
+. A light source: This could be a laser or a light-emitting diode (LED). The light source is used to shine light onto the fiber optic cable or other optical device being tested.
+
+. A power meter: This device is used to measure the power of the light being transmitted through the fiber optic cable or other optical device.
+
+. A deadzone box: This is a device that blocks out any stray light that may interfere with the measurement. It typically consists of a box with a small opening on one side and a detector on the other side.
+
+. A detector: This is a device that is used to measure the amount of light that is reflected back from the fiber optic cable or other optical device being tested.
+
+== Procedure
+
+Here is a general procedure for measuring reflectance with a deadzone box in telecom:
+
+. Gather the necessary equipment: light source, power meter, deadzone box, detector, and appropriate connectors.
+
+. Connect the light source and power meter to the fiber optic cable or other optical device using the appropriate connectors.
+
+. Place the deadzone box over the fiber optic cable or device, making sure that the opening in the box is aligned with the fiber optic cable or device.
+
+. Turn on the light source and allow it to warm up for a few minutes.
+
+. Use the power meter to measure the power of the light being transmitted through the fiber optic cable or device. Record this value.
+
+. Use the detector to measure the amount of light that is reflected back from the fiber optic cable or device. Record this value.
+
+. Calculate the reflectance of the fiber optic cable or device by dividing the reflected light value by the transmitted light value.
+
+. Record the reflectance value and any other relevant measurements, such as the wavelength of the light source or the temperature of the environment.
+
+. Repeat the measurement several times to ensure the accuracy of the results.
+
+. Disconnect the light source and power meter from the fiber optic cable or device and turn off the light source.
+
+. Clean up and properly store the equipment.
